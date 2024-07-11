@@ -14,20 +14,20 @@ a {
 }
 
 /* Navbar */
-.header {
+#header {
     overflow: hidden;
     padding: 20px 50px;
     border: 1px solid red;
 }
 
 /* Navbar links */
-.header-links {
+#header-links {
     float: right;
     text-align: center;
 }
 
 /* items */
-.header-item {
+#header-item {
     padding-left: 50px;
 }
 
