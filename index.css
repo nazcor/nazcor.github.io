@@ -5,7 +5,7 @@
 
 body {
     display: grid;
-    grid-template-rows: 5% auto;
+    grid-template-rows: 5% auto auto auto auto auto;
     grid-template-columns: 10% 80% 10%;
 }
 
@@ -32,10 +32,11 @@ a {
 }
 
 /* First section */
-#intro {
+#intro, #eduAndExp, #skills, #projects, #contact {
     display: grid;
     height: 800px;
     grid-template-columns: 10% 80% 10%;
+    border: 1px solid blue; /* TEMPORARY...DELETE LATER */
 }
 
 /* Main content of the 1st section */
@@ -45,12 +46,7 @@ a {
     align-items: start;
 }
 
-
 /* TEMPORARY...DELETE LATER */
-#intro {
-    border: 1px solid blue;
-}
-
 #connect, #connection-links {
     border: 1px solid green;
 }
