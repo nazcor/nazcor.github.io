@@ -6,8 +6,8 @@
 body {
     display: grid;
     grid-template-rows: 5% auto auto auto auto auto;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 a {
@@ -18,8 +18,14 @@ h1 {
     text-align: center;
 }
 
+hr {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Navbar */
-#header {
+#header, footer {
     overflow: hidden;
     padding: 20px 50px;
     border: 1px solid red;
@@ -37,7 +43,7 @@ h1 {
 }
 
 /* Sections */
-#intro, #skills, #projects, #contact {
+#intro {
     display: grid;
     height: 800px;
     padding-top: 50px;
@@ -46,7 +52,7 @@ h1 {
     border: 1px solid blue; /* TEMPORARY...DELETE LATER */
 }
 
-#eduAndExp {
+#edu-exp, #skills, #projects, #contact {
     display: grid;
     height: 800px;
     padding-top: 50px;
@@ -61,6 +67,10 @@ h1 {
     align-items: start;
 }
 
+#name-sep {
+    width: 100%;
+}
+
 /* TEMPORARY...DELETE LATER */
 #connect, #connection-links {
     border: 1px solid green;
@@ -71,9 +81,9 @@ h1 {
 #pfp {
     height: 80%;
     width: 50%;
-    justify-self: right;
     display: grid;
     grid-template-rows: 80% 20%;
+    margin-left: 40%;
 }
 
 #pfp-row-1, #pfp-row-2 {
@@ -90,10 +100,11 @@ h1 {
 /* Name, summary, & social links */
 #about {
     height: 90%;
-    width: 50%;
-    justify-self: left;
+    width: 60%;
+    justify-self: right;
     display: grid;
     grid-template-rows: 20% 70% 10%;
+    margin-right: 40%;
 }
 
 #about-row-1, #about-row-2, #about-row-3 {
@@ -123,16 +134,47 @@ h1 {
     justify-content: space-evenly;
 }
 
+/* Second Section */
+#edu-exp {
+    grid-template-rows: 10% auto;
+}
+
+#ee-main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-right: 20%;
+    margin-left: 20%;
+    border: 1px solid saddlebrown;
+}
+
+#experience, #education {
+    border: 1px solid pink;
+}
+
+#ee {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+
+/* Responsive Features */
 @media screen and (max-width: 900px) {
     body {
         padding: 0 0 0 0;
     }
   }
 
+@media screen and (max-width: 1000px) {
+    hr {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 1500px) {
 
     #pfp, #about {
         justify-self: center;
+        margin: 0 0 0 0;
     }
 
     #pfp {
