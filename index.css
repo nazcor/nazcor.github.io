@@ -137,7 +137,15 @@ a {
         grid-template-columns: none;
         grid-template-rows: auto auto;
     }
+  }
 
+  @media screen and (max-width: 1000px) {
+    #about-row-3 {
+        display: block;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
     #connect {
         text-align: center;
         padding: 0;
