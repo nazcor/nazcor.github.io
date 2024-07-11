@@ -1,8 +1,13 @@
 
 * {
-    box-sizing: border-box;
     margin: 0;
 }
+ /*
+body {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+*/
 
 a {
     text-decoration: none;
@@ -36,8 +41,7 @@ a {
 /* Main content of the 1st section */
 #intro-col-2 {
     display: grid;
-    grid-template-columns: 40% 60%;
-    justify-items: center;
+    grid-template-columns: 50% 50%;
     align-items: start;
 }
 
@@ -55,7 +59,7 @@ a {
 /* Profile picture & resume link */
 #pfp {
     height: 80%;
-    width: 60%;
+    width: 50%;
     justify-self: right;
     display: grid;
     grid-template-rows: 80% 20%;
@@ -75,7 +79,7 @@ a {
 /* Name, summary, & social links */
 #about {
     height: 90%;
-    width: 70%;
+    width: 50%;
     justify-self: left;
     display: grid;
     grid-template-rows: 20% 70% 10%;
@@ -108,29 +112,18 @@ a {
     justify-content: space-evenly;
 }
 
-
-/* Responsive Features */
-@media screen and (max-width: 500px) {
-    .header, a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .links {
-      float: none;
-    }
-    .header-item {
-        padding-left: 0;
-    }
-  }
-
-@media screen and (max-width: 850px) {
-    #intro, #about-row-3, #pfp, #about {
-        display: block;
+@media screen and (max-width: 1500px) {
+    #intro {
+        grid-template-columns: none;
+        grid-template-rows: 0% 100% 0%;
     }
 
     #pfp, #about {
         justify-self: center;
+    }
+
+    #pfp {
+        align-self: end;
     }
     
     #intro-col-2 {
@@ -139,13 +132,14 @@ a {
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1800px) {
     #about-row-3 {
         display: block;
+        align-items: none;
     }
   }
 
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1800px) {
     #connect {
         text-align: center;
         padding: 0;
