@@ -6,11 +6,16 @@
 body {
     display: grid;
     grid-template-rows: 5% auto auto auto auto auto;
-    grid-template-columns: 10% 80% 10%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    text-align: center;
 }
 
 /* Navbar */
@@ -31,11 +36,21 @@ a {
     padding-left: 50px;
 }
 
-/* First section */
-#intro, #eduAndExp, #skills, #projects, #contact {
+/* Sections */
+#intro, #skills, #projects, #contact {
     display: grid;
     height: 800px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     grid-template-columns: 10% 80% 10%;
+    border: 1px solid blue; /* TEMPORARY...DELETE LATER */
+}
+
+#eduAndExp {
+    display: grid;
+    height: 800px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     border: 1px solid blue; /* TEMPORARY...DELETE LATER */
 }
 
@@ -108,9 +123,9 @@ a {
     justify-content: space-evenly;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     body {
-        grid-template-columns: 0% 100% 0%;
+        padding: 0 0 0 0;
     }
   }
 
