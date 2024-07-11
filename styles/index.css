@@ -4,26 +4,114 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
 .header {
     overflow: hidden;
     padding: 20px 50px;
 }
 
-a {
-    text-decoration: none;
-}
-
-.links {
+/* Navbar links */
+.header-links {
     float: right;
     text-align: center;
 }
 
+/* items */
 .header-item {
     padding-left: 50px;
 }
 
+/* First section */
+#intro {
+    display: grid;
+    height: 800px;
+    grid-template-columns: 10% 80% 10%;
+    margin-top: 50px;
+}
+
+/* Main content of the 1st section */
+#intro-col-2 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: center;
+    align-items: start;
+}
+
+
+/* TEMPORARY...DELETE LATER */
+#intro-col-1, #intro-col-2, #intro-col-3 {
+    border: 1px solid blue;
+}
+
+#connect, #connection-links {
+    border: 1px solid green;
+}
+/* TEMPORARY...DELETE LATER */
+
+/* Profile picture & resume link */
+#pfp {
+    height: 80%;
+    width: 60%;
+    justify-self: right;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+#pfp-row-1, #pfp-row-2 {
+    border: 1px solid orange; /* TEMPORARY...DELETE LATER */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume {
+    font-size: 20px;
+}
+
+/* Name, summary, & social links */
+#about {
+    height: 90%;
+    width: 70%;
+    justify-self: left;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+}
+
+#about-row-1, #about-row-2, #about-row-3 {
+    border: 1px solid purple; /* TEMPORARY...DELETE LATER */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-row-2 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#about-row-3 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#connect {
+    padding-left: 50px;
+}
+
+#connection-links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+
+/* Responsive Features */
 @media screen and (max-width: 500px) {
-    .header a {
+    .header, a {
       float: none;
       display: block;
       text-align: left;
@@ -33,5 +121,25 @@ a {
     }
     .header-item {
         padding-left: 0;
+    }
+  }
+
+@media screen and (max-width: 850px) {
+    #intro, #about-row-3, #pfp, #about {
+        display: block;
+    }
+
+    #pfp, #about {
+        justify-self: center;
+    }
+    
+    #intro-col-2 {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+
+    #connect {
+        text-align: center;
+        padding: 0;
     }
   }
