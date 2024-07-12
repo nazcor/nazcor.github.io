@@ -16,7 +16,6 @@ a {
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 h2 {
@@ -31,6 +30,10 @@ hr {
 
 li:last-of-type {
     padding-bottom: 15px;
+}
+
+.title {
+    margin-bottom: 30px;
 }
 
 .special-ul {
@@ -189,11 +192,11 @@ li:last-of-type {
     grid-template-columns: 60% 40%;
     margin-right: 20%;
     margin-left: 20%;
-    border: 1px solid saddlebrown;
+    border: 1px solid saddlebrown; /* TEMPORARY...DELETE LATER */
 }
 
 #experience, #education {
-    border: 1px solid pink;
+    border: 1px solid pink; /* TEMPORARY...DELETE LATER */
 }
 
 #ee {
