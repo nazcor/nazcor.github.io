@@ -28,6 +28,10 @@ hr {
     margin-right: auto;
 }
 
+li:last-of-type {
+    padding-bottom: 15px;
+}
+
 .special-ul {
     list-style: none;
 }
@@ -67,7 +71,7 @@ hr {
 /* Navbar */
 #header, footer {
     overflow: hidden;
-    padding: 20px 50px;
+    padding: 2vh 50px;
     border: 1px solid red;
 }
 
