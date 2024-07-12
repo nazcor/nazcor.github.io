@@ -42,6 +42,7 @@ li:last-of-type {
 
 .special-ul .special-li {
     padding-left: 20px;
+    padding-right: 20px;
     position: relative;
     top: 0;
     min-height: 50px;
@@ -76,7 +77,7 @@ li:last-of-type {
 #header, footer {
     overflow: hidden;
     padding: 2vh 50px;
-    border: 1px solid red;
+    border: 1px solid red; /* TEMPORARY...DELETE LATER */
 }
 
 /* Navbar links */
@@ -103,7 +104,6 @@ li:last-of-type {
 #edu-exp, #skills, #projects, #contact {
     display: grid;
     height: auto;
-    padding-top: 50px;
     padding-bottom: 50px;
     border: 1px solid blue; /* TEMPORARY...DELETE LATER */
 }
@@ -202,6 +202,18 @@ li:last-of-type {
 #ee {
     display: grid;
     grid-template-rows: auto auto;
+}
+
+#awards {
+    border: 3px solid black;
+}
+
+#award-title {
+    text-align: center;
+}
+
+#award-sep {
+    width: auto;
 }
 
 
