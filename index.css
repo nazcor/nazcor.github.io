@@ -16,6 +16,7 @@ a {
 
 h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -180,7 +181,7 @@ li:last-of-type {
 
 /* Second Section */
 #edu-exp {
-    grid-template-rows: 10% auto;
+    grid-template-rows: auto auto;
 }
 
 #ee-main {
