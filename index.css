@@ -221,6 +221,7 @@ li:last-of-type {
 @media screen and (max-width: 900px) {
     body {
         padding: 0 0 0 0;
+        margin: 0 0 0 0;
     }
 
     #pfp, #about, #ee-main {
