@@ -210,11 +210,21 @@ li:last-of-type {
     body {
         padding: 0 0 0 0;
     }
+
+    #pfp, #about, #ee-main {
+        justify-self: center;
+        width: 90%;
+    }
   }
 
 @media screen and (max-width: 1000px) {
     hr {
         width: 50%;
+    }
+
+    #ee-main {
+        grid-template-columns: none;
+        display: block;
     }
 }
 
