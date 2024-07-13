@@ -216,6 +216,20 @@ li:last-of-type {
     width: auto;
 }
 
+/* Third Section */
+#skills-main, #projects-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills-item, .projects-item {
+    height: 300px;
+    width: 300px;
+    border: 1px solid magenta;
+    margin-bottom: 30px;
+}
 
 /* Responsive Features */
 @media screen and (max-width: 900px) {
