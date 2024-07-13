@@ -235,6 +235,55 @@ li:last-of-type {
 }
 
 /* Responsive Features */
+@media screen and (max-width: 1800px) {
+    #about-row-3 {
+        display: block;
+        align-items: none;
+    }
+    
+    #connect {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    #pfp, #about {
+        justify-self: center;
+        margin: 0 0 0 0;
+    }
+
+    #pfp {
+        align-self: end;
+    }
+
+    #intro {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+
+    #ee-main {
+        grid-template-columns: none;
+        display: block;
+    }
+
+    .skills-item, .projects-item {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    hr {
+        width: 50%;
+    }
+
+    .skills-item, .projects-item {
+        height: 100px;
+        width: 100px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     body {
         padding: 0 0 0 0;
@@ -245,44 +294,4 @@ li:last-of-type {
         justify-self: center;
         width: 90%;
     }
-  }
-
-@media screen and (max-width: 1000px) {
-    hr {
-        width: 50%;
-    }
 }
-
-@media screen and (max-width: 1500px) {
-
-    #pfp, #about {
-        justify-self: center;
-        margin: 0 0 0 0;
-    }
-
-    #pfp {
-        align-self: end;
-    }
-    
-    #intro {
-        grid-template-columns: none;
-        grid-template-rows: auto auto;
-    }
-
-    #ee-main {
-        grid-template-columns: none;
-        display: block;
-    }
-  }
-
-  @media screen and (max-width: 1800px) {
-    #about-row-3 {
-        display: block;
-        align-items: none;
-    }
-    
-    #connect {
-        text-align: center;
-        padding: 0;
-    }
-  }
