@@ -28,6 +28,10 @@ hr {
     margin-right: auto;
 }
 
+input {
+    margin-top: 20px;
+}
+
 li:last-of-type {
     padding-bottom: 15px;
 }
@@ -74,7 +78,7 @@ li:last-of-type {
 }
 
 /* Navbar */
-#header, footer {
+#header, #footer {
     overflow: hidden;
     padding: 2vh 50px;
     border: 1px solid red; /* TEMPORARY...DELETE LATER */
@@ -231,8 +235,21 @@ li:last-of-type {
     height: 300px;
     width: 300px;
     border: 1px solid magenta;
-    margin-bottom: 30px;
 }
+
+/* Fourth Section */
+#contact-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#contact-info{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 
 /* Responsive Features */
 @media screen and (max-width: 1800px) {
@@ -270,6 +287,10 @@ li:last-of-type {
     .skills-item, .projects-item {
         height: 200px;
         width: 200px;
+    }
+
+    #contact-main {
+        display: block;
     }
 }
 
