@@ -79,7 +79,6 @@ li:last-of-type {
 
 /* Navbar */
 #header, #footer {
-    overflow: hidden;
     padding: 2vh 50px;
     border: 1px solid red; /* TEMPORARY...DELETE LATER */
 }
@@ -91,8 +90,28 @@ li:last-of-type {
 }
 
 /* items */
-#header-item {
-    padding-left: 50px;
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 140px;
+    text-align: left;
+    background-color: blanchedalmond;
+}
+
+#dropdown-content a {
+    display: block;
+    color: black;
+    padding: 10px;
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
 }
 
 /* Sections */
