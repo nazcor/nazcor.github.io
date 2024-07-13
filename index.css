@@ -234,11 +234,6 @@ li:last-of-type {
     hr {
         width: 50%;
     }
-
-    #ee-main {
-        grid-template-columns: none;
-        display: block;
-    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -255,6 +250,11 @@ li:last-of-type {
     #intro {
         grid-template-columns: none;
         grid-template-rows: auto auto;
+    }
+
+    #ee-main {
+        grid-template-columns: none;
+        display: block;
     }
   }
 
