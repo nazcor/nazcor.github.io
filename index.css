@@ -222,6 +222,9 @@ li:last-of-type {
     align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    
 }
 
 .skills-item, .projects-item {
