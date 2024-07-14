@@ -95,7 +95,7 @@ li:last-of-type {
     display: inline-block;
 }
 
-#dropdown-content {
+.dropdown-option {
     display: none;
     position: absolute;
     z-index: 1;
@@ -104,13 +104,13 @@ li:last-of-type {
     background-color: blanchedalmond;
 }
 
-#dropdown-content a {
+.dropdown-option a {
     display: block;
     color: black;
     padding: 10px;
 }
 
-#dropdown:hover #dropdown-content {
+.show {
     display: block;
 }
 
