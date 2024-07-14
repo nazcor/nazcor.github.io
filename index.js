@@ -1,3 +1,6 @@
+const contactMe = document.getElementById("contactMe");
+const contact = document.getElementById("contact");
+
 function projectDropdown() {
     document.getElementById("dropdown-content").classList.toggle("show");
 }
@@ -15,3 +18,7 @@ window.onclick = function(event) {
         }
     }
 }
+
+contactMe.addEventListener("click", ()=> {
+    contact.scrollIntoView({behavior:"smooth", block:"end"})
+});
