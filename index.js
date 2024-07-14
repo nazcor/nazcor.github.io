@@ -20,5 +20,5 @@ window.onclick = function(event) {
 }
 
 contactMe.addEventListener("click", ()=> {
-    contact.scrollIntoView({behavior:"smooth", block:"end"})
+    contact.scrollIntoView({behavior:"smooth", block:"center"})
 });
