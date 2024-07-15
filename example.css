@@ -160,6 +160,7 @@ li:last-of-type {
         grid-template-rows: auto auto;
         justify-content: center;
         margin-left: 0;
+        margin-bottom: 0;
     }
 
     #project-img {
