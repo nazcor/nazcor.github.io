@@ -250,15 +250,27 @@ li:last-of-type {
     align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-content: space-around;
+    row-gap: 30px;
+    column-gap: 30px;
     margin-left: 10%;
     margin-right: 10%;
     
 }
 
 .skills-item, .projects-item {
+    border: 1px solid magenta;
+    border-radius: 50%;
+}
+
+.skills-item {
+    height: 200px;
+    width: 200px;
+}
+
+.projects-item {
     height: 300px;
     width: 300px;
-    border: 1px solid magenta;
 }
 
 /* Fourth Section */
@@ -281,6 +293,10 @@ li:last-of-type {
     #about-row-3 {
         display: block;
         align-items: none;
+    }
+
+    #intro {
+        padding-top: 10px;
     }
     
     #connect {
