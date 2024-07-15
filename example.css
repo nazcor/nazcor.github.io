@@ -141,8 +141,12 @@ li:last-of-type {
 }
 
 @media screen and (max-width: 1000px) {
-    #main, #main-row-2 {
+    #main {
         display: block;
+    }
+
+    #main-row-2 {
+        flex-wrap: wrap;
     }
 
     #title {
@@ -165,8 +169,13 @@ li:last-of-type {
     }
 
     #info-block-1 {
-        margin-bottom: 20px;
         max-width: none;
+        order: 2;
+    }
+
+    #info-block-2 {
+        order: 1;
+        margin-bottom: 20px;
     }
 
     #info-block-1, #info-block-2 {
