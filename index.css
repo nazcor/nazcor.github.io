@@ -269,8 +269,19 @@ li:last-of-type {
 }
 
 .projects-item {
+    display: inline-block;
     height: 300px;
     width: 300px;
+    background-color: white;
+}
+.project-desc {
+    position: relative;
+    top: 110%;
+    border: 1px solid black;
+    display: none;
+    border-radius: 25%;
+    padding: 30px 20px;
+    background-color: white;
 }
 
 /* Fourth Section */
@@ -358,4 +369,11 @@ li:last-of-type {
         justify-self: center;
         width: 90%;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .projects-item:hover .project-desc {
+        display: block;
+    }
+    
 }
