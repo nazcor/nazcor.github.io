@@ -34,12 +34,12 @@ input {
     margin-top: 20px;
 }
 
-li:last-of-type {
-    padding-bottom: 15px;
-}
-
 .title {
     margin-bottom: 30px;
+}
+
+li:last-of-type {
+    padding-bottom: 15px;
 }
 
 .special-ul {
