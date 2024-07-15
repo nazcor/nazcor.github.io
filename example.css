@@ -20,10 +20,8 @@ a {
     border: 1px solid red; /* TEMPORARY...DELETE LATER */
 }
 
-/* Navbar links */
-#header-links {
-    float: right;
-    text-align: center;
+#header {
+    display: flex;
 }
 
 /* items */
@@ -125,5 +123,12 @@ a {
     #info-block-1, #info-block-2 {
         height: auto;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
     }
 }
