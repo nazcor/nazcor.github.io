@@ -122,6 +122,7 @@ li:last-of-type {
 }
 
 #profile {
+    margin-top: 50px;
     border: 1px solid black;
     border-radius: 50%;
     height: 250px;
