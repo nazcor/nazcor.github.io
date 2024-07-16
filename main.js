@@ -1,5 +1,6 @@
-const contactMe = document.getElementById("contactMe");
 const contact = document.getElementById("contact");
+const intro = document.getElementById("intro")
+const projects = document.getElementById("projects")
 
 function projectDropdown() {
     document.getElementById("dropdown-content").classList.toggle("show");
@@ -19,6 +20,14 @@ window.onclick = function(event) {
     }
 }
 
-contactMe.addEventListener("click", ()=> {
-    contact.scrollIntoView({behavior:"smooth", block:"center"})
-});
+window.onclick = function(event) {
+    if (event.target.matches('.contactMe')) {
+        contact.scrollIntoView({behavior:"smooth", block:"center"});
+    }
+    if (event.target.matches('#home-btn')) {
+        intro.scrollIntoView({behavior:"smooth", block:"center"});
+    }
+    if (event.target.matches('#projects-btn')) {
+        projects.scrollIntoView({behavior:"smooth", block:"center"});
+    }
+}
