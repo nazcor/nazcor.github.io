@@ -286,6 +286,11 @@ li:last-of-type {
     width: 200px;
 }
 
+.progress-circle {
+    width: 100%;
+    height: 80%;
+}
+
 .back-circle {
     fill: none;
     stroke: rgb(220, 228, 244);
@@ -297,14 +302,30 @@ li:last-of-type {
     fill: none;
     stroke: rgb(49, 61, 105);
     stroke-width: 15px;
-	stroke-dasharray: 210 999;
-    stroke-dashoffset: 210px;
+	stroke-dasharray: 160 999;
+    stroke-dashoffset: 160;
 }
 
 .in-view {
-    stroke-dashoffset: 0px;
+    stroke-dashoffset: 0;
     transition: stroke-dashoffset 1s;
 }
+
+.percent {
+    text-align: center;
+    position: relative;
+    font-size: larger;
+    bottom: 47%;
+}
+
+.skill {
+    text-align: center;
+    position: relative;
+    font-size: large;
+    bottom: 10%
+}
+
+/* Fourth Section */
 
 .projects-item {
     display: inline-block;
@@ -328,7 +349,7 @@ li:last-of-type {
     background-color: white;
 }
 
-/* Fourth Section */
+/* Fifth Section */
 #contact-main {
     display: grid;
     /*grid-template-columns: 50% 50%;*/
@@ -407,6 +428,26 @@ li:last-of-type {
     .skills-item, .projects-item {
         height: 100px;
         width: 100px;
+    }
+
+    .front-circle {
+        stroke-dasharray: 80 999;
+        stroke-dashoffset: 80;
+    }
+
+    .in-view {
+        stroke-dashoffset: 0px;
+        transition: stroke-dashoffset 1s;
+    }
+
+    .percent {
+        font-size: small;
+        bottom: 50%;
+    }
+
+    .skill {
+        font-size: medium;
+        bottom: 20%
     }
 }
 
