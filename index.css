@@ -281,7 +281,6 @@ li:last-of-type {
 }
 
 .skills-item {
-    border: 1px solid magenta;
     height: 200px;
     width: 200px;
 }
