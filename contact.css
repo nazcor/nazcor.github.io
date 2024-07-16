@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+li:last-of-type {
+    padding-bottom: 15px;
+}
+
+.special-ul {
+    list-style: none;
+}
+
+.special-ul .special-li {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top: 0;
+    min-height: 50px;
+}
+
+.special-ul .special-li:after {
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+}
+
+.special-ul .special-li:before {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    border-left: 2px solid black;
+}
+
+.special-ul .special-li:last-of-type::before {
+    border: none;
+}
+
+/* Navbar */
+#header, #footer {
+    padding: 2vh 50px;
+    border: 1px solid red; /* TEMPORARY...DELETE LATER */
+}
+
+#header {
+    display: flex;
+}
+
+/* Navbar links */
+#header-links {
+    text-align: center;
+}
+
+/* items */
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-option {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 140px;
+    text-align: left;
+    background-color: blanchedalmond;
+}
+
+.dropdown-option a {
+    display: block;
+    color: black;
+    padding: 10px;
+}
+
+.show {
+    display: block;
+}
+
+#contact {
+    display: grid;
+    height: auto;
+    padding-bottom: 50px;
+    align-self: center;
+}
+
+#contact-main {
+    display: grid;
+    font-size: 20px;
+    /*grid-template-columns: 50% 50%;*/
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#contact-info{
+    /*
+    padding-left: 30px;
+    padding-right: 30px;
+    */
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+#profile {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 50px;
+}
