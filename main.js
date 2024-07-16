@@ -1,6 +1,7 @@
 const contact = document.getElementById("contact");
-const intro = document.getElementById("intro")
-const projects = document.getElementById("projects")
+const intro = document.getElementById("intro");
+const projects = document.getElementById("projects");
+const progressCircles = document.querySelectorAll(".front-circle");
 
 function projectDropdown() {
     document.getElementById("dropdown-content").classList.toggle("show");
@@ -31,3 +32,23 @@ window.onclick = function(event) {
         projects.scrollIntoView({behavior:"smooth", block:"center"});
     }
 }
+
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: .4
+}
+
+const callbacks = (progressCircles) => {
+    progressCircles.forEach(entry => {
+        if (entry.isIntersecting){
+            entry.target.classList.add('in-view');
+        }
+    });
+}
+
+let observer = new IntersectionObserver(callbacks, options);
+
+progressCircles.forEach(element => {
+    observer.observe(element);
+});

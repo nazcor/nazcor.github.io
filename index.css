@@ -275,14 +275,35 @@ li:last-of-type {
     
 }
 
-.skills-item, .projects-item {
+.projects-item {
     border: 1px solid magenta;
     border-radius: 50%;
 }
 
 .skills-item {
+    border: 1px solid magenta;
     height: 200px;
     width: 200px;
+}
+
+.back-circle {
+    fill: none;
+    stroke: rgb(220, 228, 244);
+    stroke-width: 15;
+}
+
+.front-circle {
+    transform: rotate(-90deg);
+    fill: none;
+    stroke: rgb(49, 61, 105);
+    stroke-width: 15px;
+	stroke-dasharray: 210 999;
+    stroke-dashoffset: 210px;
+}
+
+.in-view {
+    stroke-dashoffset: 0px;
+    transition: stroke-dashoffset 1s;
 }
 
 .projects-item {
