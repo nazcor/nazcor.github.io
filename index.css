@@ -274,7 +274,13 @@ li:last-of-type {
     width: 300px;
     background-color: white;
 }
+
+.project-title {
+    margin-bottom: 20px;
+}
+
 .project-desc {
+    min-width: 175px;
     position: relative;
     top: 110%;
     border: 1px solid black;
