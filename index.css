@@ -371,6 +371,13 @@ li:last-of-type {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .projects-item:hover .project-desc {
+        display: block;
+    }
+    
+}
+
 @media screen and (max-width: 1000px) {
     hr {
         width: 50%;
@@ -396,11 +403,4 @@ li:last-of-type {
     #sidenav {
         display: none;
     }
-}
-
-@media screen and (min-width: 1200px) {
-    .projects-item:hover .project-desc {
-        display: block;
-    }
-    
 }
