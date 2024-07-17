@@ -5,8 +5,7 @@
 
 body {
     display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-rows: auto 0.8fr 1fr auto auto 0.5fr auto;
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -432,6 +431,7 @@ li:last-of-type {
     body {
         padding: 0 0 0 0;
         margin: 0 0 0 0;
+        grid-template-rows: auto 0.5fr 0.5fr auto auto 0.3fr auto;
     }
 
     #pfp, #about, #ee-main {
