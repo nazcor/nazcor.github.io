@@ -268,9 +268,7 @@ li:last-of-type {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: space-around;
-    row-gap: 30px;
-    column-gap: 30px;
-    
+    row-gap: 30px;   
 }
 
 .projects-item {
@@ -323,6 +321,7 @@ li:last-of-type {
 #projects-main {
     margin-left: 10%;
     margin-right: 10%;
+    column-gap: 30px;
 }
 
 .projects-item {
