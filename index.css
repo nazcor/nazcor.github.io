@@ -270,8 +270,6 @@ li:last-of-type {
     align-content: space-around;
     row-gap: 30px;
     column-gap: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
     
 }
 
@@ -301,13 +299,9 @@ li:last-of-type {
     fill: none;
     stroke: rgb(49, 61, 105);
     stroke-width: 15px;
-	stroke-dasharray: 160 999;
-    stroke-dashoffset: 160;
-}
-
-.in-view {
-    stroke-dashoffset: 0;
-    transition: stroke-dashoffset 1s;
+	stroke-dasharray: 0 999;
+    stroke-dashoffset: 0px;
+    transition: stroke-dasharray 0.7s linear 0s;
 }
 
 .percent {
@@ -325,6 +319,11 @@ li:last-of-type {
 }
 
 /* Fourth Section */
+
+#projects-main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 .projects-item {
     display: inline-block;
@@ -427,11 +426,6 @@ li:last-of-type {
     .projects-item {
         height: 100px;
         width: 100px;
-    }
-
-    .in-view {
-        stroke-dashoffset: 0px;
-        transition: stroke-dashoffset 1s;
     }
 }
 
