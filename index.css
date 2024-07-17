@@ -268,7 +268,7 @@ li:last-of-type {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: space-around;
-    row-gap: 30px;   
+    row-gap: 30px;
 }
 
 .projects-item {
@@ -277,6 +277,7 @@ li:last-of-type {
 }
 
 .skills-item {
+    border: 1px solid magenta;
     height: 200px;
     width: 200px;
 }
@@ -441,5 +442,20 @@ li:last-of-type {
 
     #sidenav {
         display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skills-item {
+        height: 150px;
+        width: 150px;
+    }
+
+    .skill {
+        font-size: large;
+        bottom: 15%
+    }
+    .percent {
+        bottom: 50%;
     }
 }

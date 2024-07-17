@@ -56,7 +56,11 @@ progressCircles.forEach(element => {
 });
 
 function progressBar (circleDiv, percentDiv) {
-    var strokeVal = (3.2 * 100) /  100;
+    if (window.innerWidth > 400) {
+        var strokeVal = (3.2 * 100) /  100;
+    } else {
+        var strokeVal = (2.4 * 100) /  100;
+    }
     var progressVal = percentDiv.dataset.progress;
     circleDiv.style.strokeDasharray = progressVal * (strokeVal) + ' 999';
     percentDiv.getAttribute("data-progress", progressVal);
