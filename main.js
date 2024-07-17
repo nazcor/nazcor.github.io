@@ -65,7 +65,7 @@ function progressBar (circleDiv, percentDiv) {
     setTimeout(function() {
         var now = (new Date().getTime()) - start;
         var progress = now / 700;
-        percentDiv.innerHTML = progressVal / 100 * 100 + '%';
+        percentDiv.innerHTML = Math.floor(progressVal / 100 * 100) + '%';
         if (progress < 1) setTimeout(arguments.callee, 10);
     }, 10);
 }
