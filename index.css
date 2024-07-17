@@ -9,6 +9,7 @@ body {
     padding-right: 5%;
     padding-left: 5%;
     overflow: none;
+    border: 2px solid black;
 }
 
 a {
