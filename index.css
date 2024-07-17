@@ -400,7 +400,7 @@ li:last-of-type {
         display: block;
     }
 
-    .skills-item, .projects-item {
+    .projects-item {
         height: 200px;
         width: 200px;
     }
@@ -424,29 +424,14 @@ li:last-of-type {
         width: 50%;
     }
 
-    .skills-item, .projects-item {
+    .projects-item {
         height: 100px;
         width: 100px;
-    }
-
-    .front-circle {
-        stroke-dasharray: 80 999;
-        stroke-dashoffset: 80;
     }
 
     .in-view {
         stroke-dashoffset: 0px;
         transition: stroke-dashoffset 1s;
-    }
-
-    .percent {
-        font-size: small;
-        bottom: 50%;
-    }
-
-    .skill {
-        font-size: medium;
-        bottom: 20%
     }
 }
 
