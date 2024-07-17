@@ -432,6 +432,7 @@ li:last-of-type {
         padding: 0 0 0 0;
         margin: 0 0 0 0;
         grid-template-rows: auto 0.5fr 0.5fr auto auto 0.3fr auto;
+        width: 99%;
     }
 
     #pfp, #about, #ee-main {
