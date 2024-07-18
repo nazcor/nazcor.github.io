@@ -394,7 +394,6 @@ li:last-of-type {
     }
 
     #ee-main {
-        grid-template-columns: none;
         display: block;
     }
 
@@ -439,6 +438,10 @@ li:last-of-type {
     #pfp, #about, #ee-main {
         justify-self: center;
         width: 90%;
+    }
+
+    #ee-main {
+        margin: 0;
     }
 
     #sidenav {
