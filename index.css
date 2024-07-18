@@ -5,7 +5,7 @@
 
 body {
     display: grid;
-    grid-template-rows: auto 0.8fr 1fr auto auto 0.5fr auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
     padding-right: 5%;
     padding-left: 5%;
     overflow: none;
@@ -432,7 +432,8 @@ li:last-of-type {
     body {
         padding: 0 0 0 0;
         margin: 0 0 0 0;
-        display: block;
+        display: block grid;
+        row-gap: 0;
     }
 
     #pfp, #about, #ee-main {
