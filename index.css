@@ -9,6 +9,8 @@ body {
     padding-right: 5%;
     padding-left: 5%;
     overflow: none;
+    background-image: url(images/Azia\ Website\ Background\ v1.png);
+    background-size: 100%;
 }
 
 a {
