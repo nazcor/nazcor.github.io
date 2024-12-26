@@ -1,467 +1,167 @@
 
+/*--- GENERAL ---*/
+
 * {
     margin: 0;
+    font-family: "Urbanist", serif;
 }
 
-body {
-    display: grid;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    padding-right: 5%;
-    padding-left: 5%;
-    overflow: none;
+p,
+a {
+    color: #082145;
+}
+
+h1,
+h2,
+h3,
+h1 span {
+    font-family: "Cinzel Decorative", serif;
+    display: inline-block;
+    color: #082145;
+}
+
+h1 {
+    font-size: 2.5vh;
+    text-shadow: .12rem .1rem #b5bac1;
+}
+
+h1 span::first-letter {
+    font-size: 4.5vh;
+}
+
+section {
+    padding: 2% 20% 5% 20%;
+    text-align: center;
+}
+
+.divider {
+    height: 4.5vh;
+}
+
+
+
+/*--- BODY ---*/
+
+.main-body {
     background-image: url(images/Azia\ Website\ Background\ v1.png);
     background-size: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+
+
+/*--- NAV BAR ---*/
+
+nav {
+    background-color: #f9f9f9;
+    height: 20%;
+    color: #bbaba4;
+    font-weight: 600;
+    font-size: 1.6vh;
+    padding: 1% 5% 3% 5%;
 }
 
-h1 {
+nav ul {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:first-child {
+    flex: 6;
+    text-align: start;
+}
+
+nav ul li {
+    list-style: none;
+    flex: 1;
     text-align: center;
 }
 
-h2 {
-    margin-bottom: 15px;
+.logo {
+    height: 9vh;
 }
 
-hr {
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
+.profile {
+    height: 45vh;
 }
 
-input {
-    margin-top: 20px;
+
+
+/*--- INTRODUCTION SECTION ---*/
+
+#main-1 {
+    display: flex;
 }
 
-#sidenav {
-    width: 130px;
-    position: fixed;
-    z-index: 1;
-    top: 30%;
-    right: 2%;
-    overflow-x: hidden;
-    padding: 8px 0;
+.main-1-box {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#sidenav button {
-    margin: 30px;
-    padding: 20px;
-    border-radius: 50%;
-    cursor: pointer;
+#main-1-box-2 p {
+    line-height: 3vh;
+    margin: 10% 0 10% 0;
+    width: 85%;
+    font-size: 1.5vh;
 }
 
-.title {
-    margin-bottom: 30px;
+#main-1-box-2 ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4vh;
+    align-items: center;
 }
 
-li:last-of-type {
-    padding-bottom: 15px;
-}
-
-.special-ul {
+#main-1-box-2 ul li {
     list-style: none;
 }
 
-.special-ul .special-li {
-    padding-left: 20px;
-    padding-right: 20px;
-    position: relative;
-    top: 0;
-    min-height: 50px;
+#main-1-box-2 ul li img {
+    height: 4vh;
 }
 
-.special-ul .special-li:after {
-    position: absolute;
-    display: inline-block;
-    background-color: black;
-    content: "";
-    width: 10px;
-    height: 10px;
-    top: 0;
-    left: 0;
-}
 
-.special-ul .special-li:before {
-    position: absolute;
-    left: 5px;
-    top: 0;
-    content: "";
-    height: 100%;
-    width: 0;
-    border-left: 2px solid black;
-}
 
-.special-ul .special-li:last-of-type::before {
-    border: none;
-}
+/*--- SKILLS SECTION ---*/
 
-/* Navbar */
-#header, #footer {
-    padding: 2vh 50px;
-    border: 1px solid red; /* TEMPORARY...DELETE LATER */
-}
-
-#header {
+#skill-box {
     display: flex;
-}
-
-/* Navbar links */
-#header-links {
-    text-align: center;
-}
-
-/* items */
-#dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-option {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    min-width: 140px;
-    text-align: left;
-    background-color: blanchedalmond;
-}
-
-.dropdown-option a {
-    display: block;
-    color: black;
-    padding: 10px;
-}
-
-.show {
-    display: block;
-}
-
-/* Sections */
-#intro {
-    display: grid;
-    height: 800px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    grid-template-columns: 10% 80% 10%;
-    border: 1px solid blue; /* TEMPORARY...DELETE LATER */
-}
-
-#edu-exp, #skills, #projects, #contact {
-    display: grid;
-    height: auto;
-    padding-bottom: 50px;
-    border: 1px solid blue; /* TEMPORARY...DELETE LATER */
-}
-
-/* Main content of the 1st section */
-#intro {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: start;
-}
-
-#name-sep {
-    width: 100%;
-}
-
-/* TEMPORARY...DELETE LATER */
-#connect, #connection-links {
-    border: 1px solid green;
-}
-/* TEMPORARY...DELETE LATER */
-
-/* Profile picture & resume link */
-#pfp {
-    height: 80%;
-    width: 50%;
-    display: grid;
-    grid-template-rows: 80% 20%;
-    margin-left: 40%;
-}
-
-#pfp-row-1, #pfp-row-2 {
-    border: 1px solid orange; /* TEMPORARY...DELETE LATER */
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-#resume, #resume:visited {
-    font-size: 20px;
-}
-
-/* Name, summary, & social links */
-#about {
-    height: 90%;
-    width: 60%;
-    justify-self: right;
-    display: grid;
-    grid-template-rows: 20% 70% 10%;
-    margin-right: 40%;
-}
-
-#about-row-1, #about-row-2, #about-row-3 {
-    border: 1px solid purple; /* TEMPORARY...DELETE LATER */
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-#about-row-2 {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-#about-row-3 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-#connect {
-    padding-left: 50px;
-}
-
-#connection-links {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
-}
-
-/* Second Section */
-#edu-exp {
-    grid-template-rows: auto auto;
-}
-
-#ee-main {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    margin-right: 20%;
-    margin-left: 20%;
-    border: 1px solid saddlebrown; /* TEMPORARY...DELETE LATER */
-}
-
-#experience, #education {
-    border: 1px solid pink; /* TEMPORARY...DELETE LATER */
-}
-
-#ee {
-    display: grid;
-    grid-template-rows: auto auto;
-}
-
-#awards {
-    border: 3px solid black;
-}
-
-#award-title {
-    text-align: center;
-}
-
-#award-sep {
-    width: auto;
-}
-
-/* Third Section */
-#skills-main, #projects-main {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    width: 80%;
+    padding: 3% 0% 0% 0%;
+    justify-content: space-around;
     flex-wrap: wrap;
-    align-content: space-around;
-    row-gap: 30px;
-}
-
-.projects-item {
-    border: 1px solid magenta;
-    border-radius: 50%;
-}
-
-.skills-item {
-    height: 200px;
-    width: 200px;
-}
-
-.progress-circle {
-    width: 100%;
-    height: 80%;
-}
-
-.back-circle {
-    fill: none;
-    stroke: rgb(220, 228, 244);
-    stroke-width: 15;
-}
-
-.front-circle {
-    transform: rotate(-90deg);
-    fill: none;
-    stroke: rgb(49, 61, 105);
-    stroke-width: 15px;
-	stroke-dasharray: 0 999;
-    stroke-dashoffset: 0px;
-    transition: stroke-dasharray 0.7s linear 0s;
-}
-
-.percent {
-    text-align: center;
-    position: relative;
-    font-size: larger;
-    bottom: 47%;
+    row-gap: 5rem;
+    margin: 0% 10% 0% 10%;
 }
 
 .skill {
-    text-align: center;
-    position: relative;
-    font-size: large;
-    bottom: 10%
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    row-gap: 1rem;
 }
 
-/* Fourth Section */
-
-#projects-main {
-    margin-left: 10%;
-    margin-right: 10%;
-    column-gap: 30px;
+circle-progress::part(base) {
+	height: 10vh;
+    width: auto;
 }
 
-.projects-item {
-    display: inline-block;
-    height: 300px;
-    width: 300px;
-    background-color: white;
+circle-progress::part(value) {
+	stroke-width: 10%;
+	stroke: #345c98;
 }
 
-.project-title {
-    margin-bottom: 20px;
+circle-progress::part(circle) {
+	stroke-width: 10%;
+	stroke: #cadbe6;
 }
 
-.project-desc {
-    min-width: 175px;
-    position: relative;
-    top: 110%;
-    border: 1px solid black;
-    display: none;
-    border-radius: 25%;
-    padding: 30px 20px;
-    background-color: white;
-}
-
-/* Fifth Section */
-#contact-main {
-    display: grid;
-    /*grid-template-columns: 50% 50%;*/
-    margin-left: 40%;
-    margin-right: 40%;
-}
-
-/*
-#contact-info{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-*/
-
-/* Responsive Features */
-@media screen and (max-width: 1800px) {
-    #about-row-3 {
-        display: block;
-        align-items: none;
-    }
-
-    #intro {
-        padding-top: 10px;
-    }
-    
-    #connect {
-        text-align: center;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 1500px) {
-    #pfp, #about {
-        justify-self: center;
-        margin: 0 0 0 0;
-    }
-
-    #pfp {
-        align-self: end;
-    }
-
-    #intro {
-        grid-template-columns: none;
-        grid-template-rows: auto auto;
-    }
-
-    #ee-main {
-        display: block;
-    }
-
-    .projects-item {
-        height: 200px;
-        width: 200px;
-    }
-
-    #contact-main {
-        /*display: block;*/
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .projects-item:hover .project-desc {
-        display: block;
-    }
-    
-}
-
-@media screen and (max-width: 1000px) {
-    hr {
-        width: 50%;
-    }
-
-    .projects-item {
-        height: 100px;
-        width: 100px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    body {
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-        display: block grid;
-        row-gap: 0;
-    }
-
-    #pfp, #about, #ee-main {
-        justify-self: center;
-        width: 90%;
-    }
-
-    #ee-main {
-        margin: 0;
-    }
-
-    #sidenav {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .skills-item {
-        height: 150px;
-        width: 150px;
-    }
-
-    .skill {
-        font-size: large;
-        bottom: 15%
-    }
-    .percent {
-        bottom: 50%;
-    }
+circle-progress::part(text) {
+	fill: #345c98;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 600;
+    font-size: 120%;
 }

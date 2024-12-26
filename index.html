@@ -4,204 +4,91 @@
   <title>Nastazia Coronado</title>
   <link rel="icon" href="images/Logo@2x.png">
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
+  <script src="circle-progress.min.js" type="module"></script> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html"><img class="logo" src="images/Logo@2x.png"></a></li>
+      <li>Projects</li>
+      <li>Contact Me</li>
+    </ul>
+  </nav>
 
-  <section id="header">
-    <a style="flex-grow: 2" href="index.html" class="logo">Logo</a>
-    <div id="header-links">
-      <div id="dropdown">
-        <button onclick="projectDropdown()" id="dropdown-button" style="cursor: pointer;">Projects</button>
-        <div id="dropdown-content" class="dropdown-option">
-          <a href="example.html">Project 1</a>
-          <a href="example.html">Project 2</a>
-          <a href="example.html">Project 3</a>
+  <!-- INTRODUCTION -->
+  <div class="main-body">
+      <section id="main-1">
+        <div class="main-1-box">
+          <img class="profile" src="images/Azia Profile Picture@2x.png">
         </div>
-      </div>
-      <button style="margin-left: 50px;" class="contactMe">Contact Me</button>
-    </div>
-  </section>
-  <section id="intro">
-    <div id="pfp">
-      <div id="pfp-row-1"><img src="#pfp" alt="Image of Nastazia Coronado"></div>
-      <div id="pfp-row-2"><button><a id="resume" href="NastaziaCoronado_Resume.pdf" download="NastaziaCoronado_Resume">Resume</a></button></div>
-    </div>
-    <div id="about">
-      <div id="about-row-1"><h1>Nastazia Coronado<hr id="name-sep"></h1></div>
-      <div id="about-row-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aliquid hic sequi est autem maxime exercitationem cupiditate iste illo molestiae pariatur fugiat nesciunt tempora sint dolorum at, odio quo? Ad?</div>
-      <div id="about-row-3">
-        <div id="connect">Connect with Me</div>
-        <div id="connection-links">
-          <a href="https://www.linkedin.com/in/nastazia-coronado"><button id="linkedin">LinkedIn</button></a>
-          <a href="https://github.com/nazcor"><button id="Github">Github</button></a>
-            <a href="mailto:nascoron@gmail.com?subject=Olá%20Nastazia"><button id="Gmail">Gmail</button></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <div id="sidenav">
-      <button id="home-btn">Home</button><br>
-      <button id="projects-btn">Projects</button><br>
-      <button class="contactMe">Contact</button>
-    </div>
-    
-    <section id="edu-exp">
-      <h1 class="title">Experience & Education<hr></h1>
-      <div id="ee-main">
-        <div id="ee">
-          <div id="experience">
-            <div>
-              <h2>Company</h2>
-              <ul class="special-ul">
-                <li class="special-li"> 
-                  <h3>Title | Start - End</h3>
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis ab numquam eos repudiandae inventore aperiam, officiis, dignissimos molestias illo deleniti exercitationem, cupiditate earum ipsum corrupti magni debitis et quos.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis ab numquam eos repudiandae inventore aperiam, officiis, dignissimos molestias illo deleniti exercitationem, cupiditate earum ipsum corrupti magni debitis et quos.</li>
-                  </ul>
-                </li>
-                <li class="special-li"> 
-                  <h3>Title | Start - End</h3>
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis ab numquam eos repudiandae inventore aperiam, officiis, dignissimos molestias illo deleniti exercitationem, cupiditate earum ipsum corrupti magni debitis et quos.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis ab numquam eos repudiandae inventore aperiam, officiis, dignissimos molestias illo deleniti exercitationem, cupiditate earum ipsum corrupti magni debitis et quos.</li>
-                  </ul>
-                </li>
-                <li class="special-li"> 
-                  <h3>Title | Start - End</h3>
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis ab numquam eos repudiandae inventore aperiam, officiis, dignissimos molestias illo deleniti exercitationem, cupiditate earum ipsum corrupti magni debitis et quos.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis ab numquam eos repudiandae inventore aperiam, officiis, dignissimos molestias illo deleniti exercitationem, cupiditate earum ipsum corrupti magni debitis et quos.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="education">
-          <div>
-            <h2>University</h2>
-            <ul class="special-ul">
-              <li class="special-li"> 
-                <h3>Degree | Start - End</h3>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis ab numquam eos repudiandae inventore aperiam, officiis, dignissimos molestias illo deleniti exercitationem, cupiditate earum ipsum corrupti magni debitis et quos.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quis ab numquam eos repudiandae inventore aperiam, officiis, dignissimos molestias illo deleniti exercitationem, cupiditate earum ipsum corrupti magni debitis et quos.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="awards">
-        <h2 id="award-title">Awards<hr id="award-sep"></h2>
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe amet consequuntur vero ex officiis quisquam animi similique molestias tempore. Omnis sed aperiam alias temporibus nisi necessitatibus impedit ut accusantium est.</li>
+        <div class="main-1-box" id="main-1-box-2">
+          <h1><span>Nastazia</span> <span>Coronado</span></h1>
+          <img class="divider" src="images/Title Divider@2x.png">
+          <p>A recent graduate from the University of California, Los Angeles with a Bachelor's in Linguistics & Computer Science with a minor in Theater. Enthusiasitc about Software Development with a particular focus on Full-Stack development. Actively looking for Software Development/Engineering or Data Analysis positions.</p>
+          <ul>
+            <li><h3>Connect with me</h3></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/nastazia-coronado"><img src="images/5279114_linkedin_network_social_network_linkedin_logo_icon_2.png"></a></li>
+            <li><a target="_blank" href="https://github.com/nazcor"><img src="images/211904_social_github_icon_2.png"></a></li>
+            <li><a href="mailto:nascoron@gmail.com"><img src="images/4550857_email_gmail_mail_sending_yahoo_icon_2.png"></a></li>
         </ul>
-      </div>
-    </div>
-  </section>
-  
-  <section id="skills">
-    <h1 class="title">Skills<hr></h1>
-    <div id="skills-main">
-      <div class="skills-item">
-        <svg class="progress-circle">
-          <circle class="back-circle" cx="50%" cy="50%" r="28%"></circle>
-          <circle class="front-circle" cx="-40%" cy="62%" r="28%"></circle>
-        </svg>
-        <div class="percent" data-progress="55">0%</div>
-        <p class="skill">Python</p>
-      </div>
-      <div class="skills-item">
-        <svg class="progress-circle">
-          <circle class="back-circle" cx="50%" cy="50%" r="28%"></circle>
-          <circle class="front-circle" cx="-40%" cy="62%" r="28%"></circle>
-        </svg>
-        <div class="percent" data-progress="40">0%</div>
-        <p class="skill">SQL</p>
-      </div>
-      <div class="skills-item">
-        <svg class="progress-circle">
-          <circle class="back-circle" cx="50%" cy="50%" r="28%"></circle>
-          <circle class="front-circle" cx="-40%" cy="62%" r="28%"></circle>
-        </svg>
-        <div class="percent" data-progress="90">0%</div>
-        <p class="skill">HTML</p>
-      </div>
-      <div class="skills-item">
-        <svg class="progress-circle">
-          <circle class="back-circle" cx="50%" cy="50%" r="28%"></circle>
-          <circle class="front-circle" cx="-40%" cy="62%" r="28%"></circle>
-        </svg>
-        <div class="percent" data-progress="80">0%</div>
-        <p class="skill">CSS</p>
-      </div>
-    </div>
-  </section>
-  
-  <section id="projects">
-    <h1 class="title">Projects<hr></h1>
-    <div id="projects-main">
-      <a href="example.html"><div class="projects-item">
-        <div class="project-desc">
-          <h1 class="project-title">Title<hr></h1>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore molestias quis porro, atque unde delectus ipsa nulla. Odit fugit placeat, recusandae voluptas voluptate magni molestiae iure neque aliquid numquam.
         </div>
-      </div></a>
-      <a href="example.html"><div class="projects-item">
-        <div class="project-desc">
-          <h1 class="project-title">Title<hr></h1>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nam laborum, distinctio eligendi dolor quaerat autem, voluptates odio totam sunt asperiores nesciunt qui doloribus. Sed ex laborum necessitatibus id veritatis?
-        </div>
-      </div></a>
-      <a href="example.html"><div class="projects-item">
-        <div class="project-desc">
-          <h1 class="project-title">Title<hr></h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maxime ut laboriosam tempore. Quidem sint odit cupiditate quia suscipit nisi, consectetur, quisquam sapiente nemo accusamus ullam praesentium distinctio neque assumenda?
-        </div>
-      </div></a>
-      <a href="example.html"><div class="projects-item">
-        <div class="project-desc">
-          <h1 class="project-title">Title<hr></h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ab rerum dolor optio? Doloremque, nostrum libero. Enim, harum hic placeat nemo dolore ratione possimus dolorem porro, praesentium accusantium, similique perspiciatis!
-        </div>
-      </div></a>
-    </div>
-  </section>
-  
-  <section id="contact">
-    <h1 class="title">Contact Me<hr></h1>
-    <div id="contact-main">
-      <div id="contact-info">
-        <h2>Let's Connect</h2>
-        <p style="margin-bottom: 30px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem amet laboriosam voluptatum aliquam aperiam delectus autem deserunt labore veniam, voluptates temporibus officiis! Magnam consequatur odit voluptatibus modi eum eligendi excepturi.</p>
-        <ul>
-          <li>Email</li>
-          <li>Github</li>
-          <li>LinkedIn</li>
-        </ul>
-      </div>
-      <!--
-      <div id="contact-form">
-        <input name="First Name" type="text" placeholder="first name" style="width: 98%;"> <br>
-          <input name="Last Name" type="text" placeholder="last name" style="width: 98%;"><br>
-          <input name="Email" type="email" placeholder="email address" style="width: 98%;"><br>
-          <input name="Message" type="text" placeholder="subject" style="margin-bottom: 20px; width: 98%;"><br>
-          <textarea style="height: 200px; width: 98%;"></textarea><br>
-          <input type="submit" value="send" style="float: right">
-        </div>
-        -->
-      </div>
-</section>
+      </section>
 
-  <section id="footer">
-    Copyright
-  </secton>
-  
-  <script src="main.js"></script> 
-  
+      <!-- EDUCATION & EXPERIENCE -->
+      <section class="main-2-box">
+        <h1><span>Education</span> and <span>Experience</span></h1> <br>
+        <img class="divider" src="images/Title Divider@2x.png">
+        <div>
+
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="main-3-box">
+        <h1><span>Skills</span></h1> <br>
+        <img class="divider" src="images/Title Divider@2x.png">
+        <div id="skill-box">
+          <div class="skill">
+            <circle-progress text-format="percent" value="85" max="100"></circle-progress>
+            <h3>OOP Languages</h3>
+          </div>
+          <div class="skill">
+            <circle-progress text-format="percent" value="65" max="100"></circle-progress>
+            <h3>Databases & <br> Data Analytics</h3>
+          </div>
+          <div class="skill">
+            <circle-progress text-format="percent" value="60" max="100"></circle-progress>
+            <h3>Full-Stack <br> Development</h3>
+          </div>
+          <div class="skill">
+            <circle-progress text-format="percent" value="100" max="100"></circle-progress>
+            <h3>Collaboration <br> & Teamwork</h3>
+          </div>
+          <div class="skill">
+            <circle-progress text-format="percent" value="100" max="100"></circle-progress>
+            <h3>Communication</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="main-4-box">
+        <h1><span>Projects</span></h1> <br>
+        <img class="divider" src="images/Title Divider@2x.png">
+      </section>
+
+      <!-- CONTACT ME -->
+      <section class="main-5-box">
+        <h1><span>Contact</span> <span>Me</span></h1> <br>
+        <img class="divider" src="images/Title Divider@2x.png">
+      </section>
+  </div>
 </body>
+
 </html>
