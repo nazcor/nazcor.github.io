@@ -137,14 +137,42 @@ nav ul li {
 
 /*--- EDUCATION & EXPERIENCE ---*/
 
+#main-2-container {
+    display: flex;
+    column-gap: 5%;
+}
+
 .main-2-box {
     text-align: left;
-    width: 50%;
+    flex-basis: 55%;
+}
+
+#cert-lic {
+    border: 2px solid #cadbe6;
+    border-radius: 3%;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+#cert-lic .divider {
+    height: 3vh;
+    width: 15vw;
+    align-self: center;
+    margin-bottom: 5%;
+}
+
+#cert-lic h3 {
+    text-align: center;
+    padding-top: 5%;
 }
 
 .main-2-box h3 {
     margin-top: 2em;
 }
+
 
 .main-2-box h3:first-of-type {
     margin-top: 0;
@@ -183,7 +211,7 @@ nav ul li {
 .description li:before {
     content: "";
     position: absolute;
-    left: -31px;
+    left: -27px;
     border-left: 2px solid #345c98;
     height: 100%;
     width: 1px;
