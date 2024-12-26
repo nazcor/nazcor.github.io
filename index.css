@@ -4,10 +4,15 @@
 * {
     margin: 0;
     font-family: "Urbanist", serif;
+    color: #082145;
 }
 
-p,
-a {
+h1,
+h2,
+h3,
+h1 span,
+#main-2 .list-head {
+    font-family: "Cinzel Decorative", serif;
     color: #082145;
 }
 
@@ -15,9 +20,8 @@ h1,
 h2,
 h3,
 h1 span {
-    font-family: "Cinzel Decorative", serif;
+
     display: inline-block;
-    color: #082145;
 }
 
 h1 {
@@ -36,6 +40,7 @@ section {
 
 .divider {
     height: 4.5vh;
+    margin-bottom: 2%;
 }
 
 
@@ -64,6 +69,10 @@ nav ul {
     vertical-align: middle;
     display: flex;
     align-items: center;
+}
+
+nav ul a {
+    color: #bbaba4;
 }
 
 nav ul li:first-child {
@@ -102,7 +111,7 @@ nav ul li {
 
 #main-1-box-2 p {
     line-height: 3vh;
-    margin: 10% 0 10% 0;
+    margin: 7% 0 10% 0;
     width: 85%;
     font-size: 1.5vh;
 }
@@ -121,6 +130,68 @@ nav ul li {
 
 #main-1-box-2 ul li img {
     height: 4vh;
+}
+
+
+
+
+/*--- EDUCATION & EXPERIENCE ---*/
+
+.main-2-box {
+    text-align: left;
+    width: 50%;
+}
+
+.main-2-box h3 {
+    margin-top: 2em;
+}
+
+.main-2-box h3:first-of-type {
+    margin-top: 0;
+}
+
+.list-item {
+    position: relative;
+    left: 2em;
+}
+
+.list-head {
+    font-weight: 600;
+    list-style-image: url(images/Star\ Open.svg);
+    margin-top: 1em;
+}
+
+.list-text {
+    font-family: "Cinzel Decorative", serif;
+    position: relative;
+    bottom: 15px;
+}
+
+.list-text span {
+    font-family: "Cinzel Decorative", serif;
+    color: #345c98;
+}
+
+.description li {
+    list-style: disc;
+    list-style-position: inside;
+    position: relative;
+    right: 2.5em;
+    line-height: 1.5em;
+}
+
+.description li:before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    border-left: 2px solid #345c98;
+    height: 100%;
+    width: 1px;
+}
+
+.description:last-of-type li::before {
+    content: none;
+    border-left: none; 
 }
 
 
