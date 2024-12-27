@@ -25,12 +25,11 @@ h1 span {
 }
 
 h1 {
-    font-size: 2.5vh;
     text-shadow: .12rem .1rem #b5bac1;
 }
 
 h1 span::first-letter {
-    font-size: 4.5vh;
+    font-size: 3.5rem;
 }
 
 section {
@@ -38,9 +37,13 @@ section {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .divider {
-    height: 4.5vh;
-    margin-bottom: 2%;
+    height: 4rem;
+    margin-bottom: 1%;
 }
 
 
@@ -61,7 +64,7 @@ nav {
     height: 20%;
     color: #bbaba4;
     font-weight: 600;
-    font-size: 1.6vh;
+    font-size: larger;
     padding: 1% 5% 3% 5%;
 }
 
@@ -87,11 +90,11 @@ nav ul li {
 }
 
 .logo {
-    height: 9vh;
+    height: 7rem;
 }
 
 .profile {
-    height: 45vh;
+    height: 35rem;
 }
 
 
@@ -110,17 +113,15 @@ nav ul li {
 }
 
 #main-1-box-2 p {
-    line-height: 3vh;
+    line-height: 3rem;
     margin: 7% 0 10% 0;
     width: 85%;
-    font-size: 1.5vh;
 }
 
 #main-1-box-2 ul {
     width: 80%;
     display: flex;
     justify-content: space-around;
-    font-size: 1.4vh;
     align-items: center;
 }
 
@@ -129,7 +130,7 @@ nav ul li {
 }
 
 #main-1-box-2 ul li img {
-    height: 4vh;
+    height: 3.5rem;
 }
 
 
@@ -148,7 +149,7 @@ nav ul li {
 }
 
 #cert-lic {
-    border: 2px solid #cadbe6;
+    border: .1rem solid #cadbe6;
     border-radius: 3%;
     display: flex;
     align-content: center;
@@ -158,8 +159,8 @@ nav ul li {
 }
 
 #cert-lic .divider {
-    height: 3vh;
-    width: 15vw;
+    height: 2.5rem;
+    width: 25rem;
     align-self: center;
     margin-bottom: 5%;
 }
@@ -180,7 +181,7 @@ nav ul li {
 
 .list-item {
     position: relative;
-    left: 2em;
+    left: 30px;
 }
 
 .list-head {
@@ -204,17 +205,16 @@ nav ul li {
     list-style: disc;
     list-style-position: inside;
     position: relative;
-    right: 2.5em;
+    right: 45px;
     line-height: 1.5em;
 }
 
 .description li:before {
     content: "";
     position: absolute;
-    left: -27px;
-    border-left: 2px solid #345c98;
+    left: -23px;
+    border-left: .13rem solid #345c98;
     height: 100%;
-    width: 1px;
 }
 
 .description:last-of-type li::before {
@@ -244,7 +244,7 @@ nav ul li {
 }
 
 circle-progress::part(base) {
-	height: 10vh;
+	height: 8rem;
     width: auto;
 }
 
@@ -262,5 +262,97 @@ circle-progress::part(text) {
 	fill: #345c98;
     font-family: "Cinzel Decorative", serif;
     font-weight: 600;
-    font-size: 120%;
+}
+
+
+
+/*--- PROJECTS ---*/
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 5%;
+}
+
+#projects button {
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    border: .2rem #082145 solid;
+    cursor: pointer;
+}
+
+#tugo {
+    background: url(images/tugo-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#perspective {
+    background: url(images/perspective-logo.png);
+    background-size: 130%;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+
+/*--- CONTACT ME ---*/
+
+#main-5 h2::before {
+    content: url(images/Star\ Closed.svg);
+    position: relative;
+    top: 15px;
+    right: 15px;
+}
+
+#main-5 p {
+    width: 40%;
+    line-height: 2em;
+    margin: 2% 30% 0 30%;
+}
+
+#main-5 img {
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+#contact ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+#contact a {
+    display: flex;
+    align-items: center;
+    margin: 1% 0 10% 0;
+}
+
+#contact a:first-of-type {
+    margin-top: 10%;
+}
+
+
+
+/*--- RESPONSIVE FEATURES ---*/
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: smaller;
+    }
+
+    
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: x-small;
+    }
 }
