@@ -654,6 +654,10 @@ circle-progress::part(text) {
     #projects-popups .poster {
         display: none;
     }
+
+    #projects-popups h1 {
+        margin-top: 20px;
+    }
     
     #projects-buttons button {
         height: 6rem;
