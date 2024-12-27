@@ -373,8 +373,13 @@ circle-progress::part(text) {
     margin: 10px 5% 30px 5%;
 }
 
+#projects-popups .spacer {
+    width: 100%;
+    height: 30px;
+}
+
 .popup-buttons {
-    position: relative;
+    position: absolute;
     width: 100%;
     bottom: 25px;
     display: flex;
@@ -642,7 +647,7 @@ circle-progress::part(text) {
     h1 span::first-letter {
         font-size: 2.5rem;
     }
-    
+
     /*--- PROJECTS ---*/
     
     #projects-popups .poster {
