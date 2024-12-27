@@ -1,0 +1,52 @@
+
+
+.main-body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#credits {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+}
+
+.name {
+    color: #345c98
+}
+
+
+
+
+/*--- RESPONSIVE FEATURES ---*/
+
+@media screen and (max-width: 2000px) {
+    .main-body {
+        padding-top: 10%;
+    }
+
+    #credits {
+        position: relative;
+        top: -15%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .main-body {
+        height: 100vh;
+    }
+
+    #credits {
+        row-gap: 3rem;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+
+    h1 span::first-letter {
+        font-size: 2.5rem;
+    }
+}

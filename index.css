@@ -347,6 +347,18 @@ circle-progress::part(text) {
 
 
 
+/*--- FOOTER ---*/
+
+#main-6 {
+    padding-bottom: 1%;
+}
+
+#main-6 a {
+    color: #345c98;
+}
+
+
+
 /*--- RESPONSIVE FEATURES ---*/
 
 @media screen and (max-width: 1200px) {
