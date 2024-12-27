@@ -30,6 +30,7 @@ h1 span {
 
 h1 {
     text-shadow: .12rem .1rem #b5bac1;
+    font-size: xx-large;
 }
 
 h1 span::first-letter {
@@ -421,6 +422,16 @@ circle-progress::part(text) {
         left: -21px;
     }
 
+    .list-item:last-of-type {
+        margin-bottom: 8%;
+    }
+
+    /*--- SKILLS ---*/
+
+    .skill h3 {
+        font-size: small;
+    }
+
     /*--- PROJECTS ---*/
 
     #projects button {
@@ -465,10 +476,6 @@ circle-progress::part(text) {
     .skill {
         flex-basis: 40%;
     }
-
-    .skill h3 {
-        font-size: small;
-    }
     
     /*--- CONTACT ME ---*/
     
@@ -487,6 +494,14 @@ circle-progress::part(text) {
         flex: 2;
     }
 
+    .list-text {
+        bottom: 20px;
+    }
+
+    section {
+        padding-bottom: 15%;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -503,6 +518,14 @@ circle-progress::part(text) {
 
     .logo {
         height: 5rem;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    h1 span::first-letter {
+        font-size: 2.5rem;
     }
 
     /*--- SKILLS ---*/
