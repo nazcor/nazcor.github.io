@@ -275,34 +275,126 @@ circle-progress::part(text) {
 
 /*--- PROJECTS ---*/
 
-#projects {
+#projects-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     column-gap: 5%;
 }
 
-#projects button {
+#projects-buttons button {
     border-radius: 50%;
     height: 15rem;
     width: 15rem;
     border: .2rem #082145 solid;
     cursor: pointer;
+    filter: grayscale(70%);
+    transition: filter .5s, height .5s, width .5s;
 }
 
-#tugo {
+#projects-buttons button:hover {
+    filter: grayscale(0%);
+    height: 18rem;
+    width: 18rem;
+}
+
+#tugo-button {
     background: url(images/tugo-logo.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#perspective {
+#perspective-button {
     background: url(images/perspective-logo.png);
     background-size: 130%;
     background-position-x: center;
     background-position-y: center;
 }
 
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#projects-popups {
+    display: flex;
+    justify-content: center;
+}
+
+#projects-popups .popup {
+    display: none;
+    background: #f9f9f9;
+    overflow: hidden;
+    border: #082145 2px solid;
+    border-radius: 15%;
+    height: 600px;
+    width: 700px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+#projects-popups .tugo .poster {
+    background: linear-gradient(to bottom, transparent, 50%, #f9f9f9), url("images/tugo-logo.png");
+    background-position: center;
+}
+
+#projects-popups .perspective .poster {
+    background: linear-gradient(to bottom, transparent, 50%, #f9f9f9), url("images/perspective-logo.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+}
+
+#projects-popups .poster {
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+
+#projects-popups .divider {
+    height: 2rem;
+    margin-bottom: 2%;
+}
+
+#projects-popups p {
+    width: 90%;
+    margin: 10px 5% 30px 5%;
+}
+
+.popup-buttons {
+    position: relative;
+    width: 100%;
+    bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#projects-popups button,
+#projects-popups a {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    font-size: 100%;
+    color: #bbaba4;
+}
+
+
+#projects-popups button:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
 
 
 /*--- CONTACT ME ---*/
@@ -434,9 +526,14 @@ circle-progress::part(text) {
 
     /*--- PROJECTS ---*/
 
-    #projects button {
+    #projects-buttons button {
         height: 10rem;
         width: 10rem;
+    }
+
+    #projects-popups .popup {
+        height: 500px;
+        width: 600px;
     }
 }
 
@@ -476,6 +573,12 @@ circle-progress::part(text) {
     .skill {
         flex-basis: 40%;
     }
+
+    /*--- PROJECTS ---*/
+
+    #projects-buttons button {
+        filter: grayscale(0%);
+    }
     
     /*--- CONTACT ME ---*/
     
@@ -504,28 +607,56 @@ circle-progress::part(text) {
 
 }
 
+@media screen and (max-width: 600px) {
+
+    /*--- PROJECTS ---*/
+
+    #projects-popups .popup {
+        height: 600px;
+        width: 400px;
+        border-radius: 10%;
+    }
+
+}
+
 @media screen and (max-width: 500px) {
-
+    
     /*--- NAV BAR ---*/
-
+    
     nav {
         padding: 5% 5% 3% 5%;
     }
-
+    
     nav ul li:first-child {
         flex: 1;
     }
-
+    
     .logo {
         height: 5rem;
     }
-
+    
     h1 {
         font-size: large;
     }
-
+    
     h1 span::first-letter {
         font-size: 2.5rem;
+    }
+    
+    /*--- PROJECTS ---*/
+    
+    #projects-popups .poster {
+        display: none;
+    }
+    
+    #projects-buttons button {
+        height: 6rem;
+        width: 6rem;
+    }
+    
+    #projects-popups .popup {
+        height: fit-content;
+        width: 300px;
     }
 
     /*--- SKILLS ---*/
@@ -615,12 +746,6 @@ circle-progress::part(text) {
         font-size: x-small;
     }
 
-    /*--- PROJECTS ---*/
-
-    #projects button {
-        height: 6rem;
-        width: 6rem;
-    }
 
     /*--- CONTACT ME ---*/
     

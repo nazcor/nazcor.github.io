@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
   <script src="circle-progress.min.js" type="module"></script> 
+  <script src="projects.js" type="text/javascript"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -117,9 +118,35 @@
       <section id="main-4">
         <h1><span>Projects</span></h1> <br>
         <img class="divider" src="images/Title Divider@2x.png"> <br>
-        <div id="projects">
-          <button id="tugo"></button>
-          <button id="perspective"></button>
+        <div id="projects-buttons">
+          <button onclick="popupFn(this.value)" value="tugo" class="tugo" id="tugo-button"></button>
+          <button onclick="popupFn(this.value)" value="perspective" class="perspective" id="perspective-button"></button>
+        </div>
+        <div id="overlay"></div>
+        <div id="projects-popups">
+          <div class="tugo popup" value="tugo">
+            <div class="poster"></div>
+            <h1>Tugo</h1> <br>
+            <img class="divider" src="images/Title Divider@2x.png"> <br>
+            <p>Have you ever walked through a beach or park in the summer and wondered what others are listening to on their earbuds? Whether you're in a café, on public transportation, or just taking a stroll, many of us are curious about the music around us. Tugo is the mobile platform designed to answer that curiosity by making music-sharing more transparent and social. It bridges the gap between personal listening experiences and social music sharing. With Tugo, you can discover what people around you are listening to, sample their songs, and even shuffle through a diverse mix of music from those nearby.</p>
+            <p>Languages: TypeScript, ReactNative</p>
+            <div class="popup-buttons">
+              <button><a target="_blank" href="https://github.com/jenpennen/tugo">Visit Page</a></button>
+              <button onclick="closeFn(this.value)" value="tugo">Close</button>
+            </div>
+          </div>
+
+          <div class="perspective popup" value="perspective">
+            <div class="poster"></div>
+            <h1>Perspective</h1> <br>
+            <img class="divider" src="images/Title Divider@2x.png"> <br>
+            <p>Perspective is a social application aimed at improving communication between UCLA student organizations and the general student population.</p>
+            <p>Languages: HTML, CSS, React, Vite</p>
+            <div class="popup-buttons">
+              <button><a target="_blank" href="https://github.com/jenpennen/perspective-frontend">Visit Page</a></button>
+              <button onclick="closeFn(this.value)" value="perspective">Close</button>
+            </div>
+          </div>
         </div>
       </section>
 
