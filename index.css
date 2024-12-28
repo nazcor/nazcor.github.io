@@ -288,14 +288,6 @@ circle-progress::part(text) {
     width: 15rem;
     border: .2rem #082145 solid;
     cursor: pointer;
-    filter: grayscale(70%);
-    transition: filter .5s, height .5s, width .5s;
-}
-
-#projects-buttons button:hover {
-    filter: grayscale(0%);
-    height: 18rem;
-    width: 18rem;
 }
 
 #tugo-button {
@@ -577,13 +569,6 @@ circle-progress::part(text) {
 
     .skill {
         flex-basis: 40%;
-    }
-
-    /*--- PROJECTS ---*/
-
-    #projects-buttons button {
-        filter: grayscale(0%);
-        transition: none;
     }
     
     /*--- CONTACT ME ---*/
