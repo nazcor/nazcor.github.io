@@ -657,6 +657,14 @@ circle-progress::part(text) {
         font-size: 2.5rem;
     }
 
+    .main-2-box h3 {
+        font-size: medium;
+    }
+
+    .list-item {
+        font-size: smaller;
+    }
+
     /*--- PROJECTS ---*/
 
     #projects-popups h1 {
