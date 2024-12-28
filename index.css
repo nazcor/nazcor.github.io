@@ -333,6 +333,22 @@ circle-progress::part(text) {
     z-index: 1000;
 }
 
+.popup b {
+    font-weight: 600;
+}
+
+.popup-description {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 30%;
+}
+
+.popup-description p {
+    align-self: center;
+    width: 90%;
+}
+
 #projects-popups .tugo .poster {
     background: linear-gradient(to bottom, transparent, 50%, #f9f9f9), url("images/tugo-logo.png");
     background-position: center;
@@ -357,11 +373,6 @@ circle-progress::part(text) {
 #projects-popups .divider {
     height: 2rem;
     margin-bottom: 2%;
-}
-
-#projects-popups p {
-    width: 90%;
-    margin: 10px 5% 30px 5%;
 }
 
 #projects-popups .spacer {
