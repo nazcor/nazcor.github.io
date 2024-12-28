@@ -630,7 +630,7 @@ circle-progress::part(text) {
     }
 
     .popup p {
-        font-size: 4vh;
+        font-size: 1vh;
     }
     
     #projects-popups .poster {
@@ -760,6 +760,7 @@ circle-progress::part(text) {
     }
 
     /*--- SKILLS ---*/
+
     .list-item {
         position: relative;
         left: 10px;
