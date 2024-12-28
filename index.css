@@ -603,16 +603,27 @@ circle-progress::part(text) {
     /*--- PROJECTS ---*/
 
     #projects-popups .popup {
-        height: 600px;
-        width: 400px;
-        border-radius: 10%;
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 0%;
     }
 
+    #projects-popups .poster {
+        display: none;
+    }    
 }
 
 @media screen and (max-height: 500px) {
-
+    
     /*--- PROJECTS ---*/
+    
+    #projects-popups .popup {
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 0%;
+    }
     
     #projects-popups .poster {
         display: none;
@@ -626,18 +637,6 @@ circle-progress::part(text) {
         height: 6rem;
         width: 6rem;
     }
-    
-    #projects-popups .popup {
-        height: fit-content;
-        width: 500px;
-    }
-
-    /*--- SKILLS ---*/
-    .list-item {
-        position: relative;
-        left: 20px;
-    }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -665,10 +664,6 @@ circle-progress::part(text) {
     }
 
     /*--- PROJECTS ---*/
-    
-    #projects-popups .poster {
-        display: none;
-    }
 
     #projects-popups h1 {
         margin-top: 20px;
@@ -678,27 +673,11 @@ circle-progress::part(text) {
         height: 6rem;
         width: 6rem;
     }
-    
-    #projects-popups .popup {
-        height: fit-content;
-        width: 300px;
-    }
 
     /*--- SKILLS ---*/
     .list-item {
         position: relative;
         left: 20px;
-    }
-
-}
-
-@media screen and (max-height: 400px) {
-
-    /*--- PROJECTS ---*/
-    
-    #projects-popups .popup {
-        height: fit-content;
-        width: 450px;
     }
 
 }
