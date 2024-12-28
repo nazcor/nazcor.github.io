@@ -663,7 +663,7 @@ circle-progress::part(text) {
 
     .list-item,
     #cert-lic li {
-        font-size: smaller;
+        font-size: xx-small;
     }
 
     /*--- PROJECTS ---*/
