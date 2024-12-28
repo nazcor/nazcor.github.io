@@ -618,7 +618,9 @@ circle-progress::part(text) {
         border: none;
         border-radius: 0%;
     }
+}
 
+@media screen and (max-height: 600px) {
     #projects-popups .poster {
         display: none;
     }    
@@ -641,10 +643,6 @@ circle-progress::part(text) {
 
     .popup p {
         font-size: xx-small;
-    }
-    
-    #projects-popups .poster {
-        display: none;
     }
 
     #projects-popups h1 {
