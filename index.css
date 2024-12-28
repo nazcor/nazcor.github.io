@@ -199,7 +199,7 @@ nav ul li {
     font-family: "Cinzel Decorative", serif;
     bottom: 15px;
     position: relative;
-    font-size: inherit;
+    font-size: 1em;
 }
 
 .list-text span {
@@ -213,7 +213,7 @@ nav ul li {
     position: relative;
     right: 45px;
     line-height: 1.5em;
-    font-size: inherit;
+    font-size: 1em;
 }
 
 .description li:before {
@@ -442,6 +442,7 @@ circle-progress::part(text) {
 
 #main-6 {
     padding-bottom: 1%;
+    font-size: 1rem;
 }
 
 #main-6 a {
