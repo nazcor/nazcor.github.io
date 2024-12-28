@@ -565,6 +565,16 @@ circle-progress::part(text) {
         font-size: small;
     }
 
+    /*--- EDUCATION & EXPERIENCE ---*/
+
+    .list-head {
+        font-size: small;
+    }
+
+    .list-text {
+        bottom: 20px;
+    }
+
     /*--- SKILLS ---*/
 
     .skill {
