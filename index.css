@@ -625,6 +625,36 @@ circle-progress::part(text) {
 
 }
 
+@media screen and (max-height: 500px) {
+
+    /*--- PROJECTS ---*/
+    
+    #projects-popups .poster {
+        display: none;
+    }
+
+    #projects-popups h1 {
+        margin-top: 20px;
+    }
+    
+    #projects-buttons button {
+        height: 6rem;
+        width: 6rem;
+    }
+    
+    #projects-popups .popup {
+        height: fit-content;
+        width: 500px;
+    }
+
+    /*--- SKILLS ---*/
+    .list-item {
+        position: relative;
+        left: 20px;
+    }
+
+}
+
 @media screen and (max-width: 500px) {
     
     /*--- NAV BAR ---*/
@@ -673,6 +703,17 @@ circle-progress::part(text) {
     .list-item {
         position: relative;
         left: 20px;
+    }
+
+}
+
+@media screen and (max-height: 400px) {
+
+    /*--- PROJECTS ---*/
+    
+    #projects-popups .popup {
+        height: fit-content;
+        width: 450px;
     }
 
 }
