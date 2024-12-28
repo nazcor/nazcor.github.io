@@ -190,6 +190,11 @@ nav ul li {
     left: 30px;
 }
 
+.list-item,
+#cert-lic li {
+    font-size: 1em;
+}
+
 .list-head {
     font-weight: 600;
     list-style-image: url(images/Star\ Open.svg);
@@ -657,15 +662,6 @@ circle-progress::part(text) {
         font-size: 2.5rem;
     }
 
-    .main-2-box h3 {
-        font-size: larger;
-    }
-
-    .list-item,
-    #cert-lic li {
-        font-size: xx-small;
-    }
-
     /*--- PROJECTS ---*/
 
     #projects-popups h1 {
@@ -729,10 +725,6 @@ circle-progress::part(text) {
     #main-1-box-2 li {
         position: relative;
         right: 5%;
-    }
-
-    #main-1-box-2 h3 {
-        font-size: smaller;
     }
 
 
