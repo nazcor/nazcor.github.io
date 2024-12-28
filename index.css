@@ -658,10 +658,11 @@ circle-progress::part(text) {
     }
 
     .main-2-box h3 {
-        font-size: medium;
+        font-size: larger;
     }
 
-    .list-item {
+    .list-item,
+    #cert-lic li {
         font-size: smaller;
     }
 
