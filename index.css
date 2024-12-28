@@ -177,7 +177,6 @@ nav ul li {
 
 .main-2-box h3 {
     margin-top: 2em;
-    font-size: large;
 }
 
 
@@ -188,11 +187,6 @@ nav ul li {
 .list-item {
     position: relative;
     left: 30px;
-}
-
-.list-item,
-#cert-lic li {
-    font-size: 1em;
 }
 
 .list-head {
@@ -661,17 +655,6 @@ circle-progress::part(text) {
     
     h1 span::first-letter {
         font-size: 2.5rem;
-    }
-    
-    /*--- EDUCATION AND EXPERIENCE ---*/
-
-    .main-2-box h3 {
-        font-size: medium;
-    }
-    
-    .list-item,
-    #cert-lic li {
-        font-size: .5em;
     }
     
     /*--- PROJECTS ---*/
