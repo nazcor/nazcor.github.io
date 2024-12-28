@@ -31,6 +31,14 @@
         position: relative;
         top: -15%;
     }
+
+    h1 {
+        font-size: medium;
+    }
+    
+    h1 span::first-letter {
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 670px) {
@@ -40,13 +48,5 @@
 
     #credits {
         row-gap: 3rem;
-    }
-
-    h1 {
-        font-size: medium;
-    }
-
-    h1 span::first-letter {
-        font-size: 2.5rem;
     }
 }
