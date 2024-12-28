@@ -630,7 +630,7 @@ circle-progress::part(text) {
     }
 
     .popup p {
-        font-size: 1vh;
+        font-size: xx-small;
     }
     
     #projects-popups .poster {
