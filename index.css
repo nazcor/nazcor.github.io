@@ -624,6 +624,14 @@ circle-progress::part(text) {
         border: none;
         border-radius: 0%;
     }
+
+    .popup h1 {
+        font-size: large;
+    }
+
+    .popup p {
+        font-size: small;
+    }
     
     #projects-popups .poster {
         display: none;
