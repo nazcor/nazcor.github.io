@@ -177,6 +177,7 @@ nav ul li {
 
 .main-2-box h3 {
     margin-top: 2em;
+    font-size: 1.2em;
 }
 
 
@@ -187,6 +188,7 @@ nav ul li {
 .list-item {
     position: relative;
     left: 30px;
+    font-size: 1em;
 }
 
 .list-head {
@@ -197,9 +199,8 @@ nav ul li {
 
 .list-text {
     font-family: "Cinzel Decorative", serif;
-    bottom: 15px;
+    bottom: 20px;
     position: relative;
-    font-size: 1em;
 }
 
 .list-text span {
@@ -213,7 +214,6 @@ nav ul li {
     position: relative;
     right: 45px;
     line-height: 1.5em;
-    font-size: 1em;
 }
 
 .description li:before {
@@ -442,7 +442,6 @@ circle-progress::part(text) {
 
 #main-6 {
     padding-bottom: 1%;
-    font-size: 1rem;
 }
 
 #main-6 a {
@@ -558,12 +557,6 @@ circle-progress::part(text) {
     .main-1-box {
         flex-basis: 100%;
     }
-    
-    /*--- EDUCATION & EXPERIENCE ---*/
-
-    .list-text {
-        bottom: 20px;
-    }
 
     /*--- SKILLS ---*/
 
@@ -586,10 +579,6 @@ circle-progress::part(text) {
 
     nav ul li:first-child {
         flex: 2;
-    }
-
-    .list-text {
-        bottom: 20px;
     }
 
     section {
