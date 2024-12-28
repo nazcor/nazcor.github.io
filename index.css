@@ -24,7 +24,6 @@ h1,
 h2,
 h3,
 h1 span {
-
     display: inline-block;
 }
 
@@ -198,8 +197,9 @@ nav ul li {
 
 .list-text {
     font-family: "Cinzel Decorative", serif;
-    position: relative;
     bottom: 15px;
+    position: relative;
+    font-size: inherit;
 }
 
 .list-text span {
@@ -213,6 +213,7 @@ nav ul li {
     position: relative;
     right: 45px;
     line-height: 1.5em;
+    font-size: inherit;
 }
 
 .description li:before {
@@ -474,10 +475,6 @@ circle-progress::part(text) {
         font-size: smaller;
     }
 
-    #main-1-box-2 h3 {
-        font-size: smaller;
-    }
-
     #main-1-box-2 img {
         height: 2.5rem;
     }
@@ -560,16 +557,8 @@ circle-progress::part(text) {
     .main-1-box {
         flex-basis: 100%;
     }
-
-    #main-1-box-2 h3 {
-        font-size: small;
-    }
-
+    
     /*--- EDUCATION & EXPERIENCE ---*/
-
-    .list-head {
-        font-size: small;
-    }
 
     .list-text {
         bottom: 20px;
