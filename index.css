@@ -177,7 +177,6 @@ nav ul li {
 
 .main-2-box h3 {
     margin-top: 2em;
-    font-size: 1.2em;
 }
 
 
@@ -561,12 +560,6 @@ circle-progress::part(text) {
 
     .skill {
         flex-basis: 40%;
-    }
-
-    /*--- PROJECTS ---*/
-
-    .list-item {
-        font-size: x-small;
     }
     
     /*--- CONTACT ME ---*/
