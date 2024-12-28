@@ -566,7 +566,7 @@ circle-progress::part(text) {
     /*--- PROJECTS ---*/
 
     .list-item {
-        font-size: smaller;
+        font-size: x-small;
     }
     
     /*--- CONTACT ME ---*/
