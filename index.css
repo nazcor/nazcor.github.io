@@ -283,9 +283,10 @@ circle-progress::part(text) {
 
 #projects-buttons button {
     border-radius: 50%;
+    border: none;
     height: 15rem;
     width: 15rem;
-    border: .2rem #082145 solid;
+    box-shadow: 0px 0px 19px 0 rgba(8, 33, 69, 0.30);
     cursor: pointer;
 }
 
