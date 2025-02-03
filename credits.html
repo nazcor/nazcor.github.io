@@ -3,32 +3,83 @@
 <head >
   <title>Nastazia Coronado</title>
   <link rel="icon" href="images/Logo@2x.png">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link rel="stylesheet" type="text/css" href="credits.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html {
+      height: 100%;
+    }
+    
+    body {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-body {
+      flex: 1;
+    }
+
+    #credits {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5rem;
+    }
+
+    .name {
+      color: #345c98
+    }
+
+
+
+    /*--- RESPONSIVE FEATURES ---*/
+
+    @media screen and (max-width: 2000px) {
+        .main-body {
+          padding-top: 10%;
+        }
+
+        #credits {
+          position: relative;
+          top: -15%;
+        }
+        
+        h1 span::first-letter {
+          font-size: 2.5rem;
+        }
+    }
+
+    @media screen and (max-width: 670px) {
+        #credits {
+          row-gap: 3rem;
+        }
+    }
+  </style>
 </head>
 
 <body>
   <!-- NAVBAR -->
   <nav>
+    <div class="main-content">
+    <a href="index.html"><img id="logo" class="responsive" src="images/Logo@2x.png" height="253" width="283" alt="NC Logo"></a>
     <ul>
-      <li><a href="index.html"><img class="logo" src="images/Logo@2x.png"></a></li>
-      <li><a href="index.html#main-4">Projects</a></li>
-      <li><a href="index.html#main-5">Contact Me</a></li>
+      <li><a href="/#main-4">Projects</a></li>
+      <li><a href="/#main-5">Contact Me</a></li>
     </ul>
+    </div>
   </nav>
-
-
+  
+  
   <!-- MAIN BODY -->
-  <div class="main-body">
-    <section id="credits">
-        <h1><span>Designed</span> by <span class="name">Katerina</span> <span class="name">Coronado</span></h1>
-        <h1><span>Developed</span> by <span class="name">Nastazia</span> <span class="name">Coronado</span></h1>
-    </section>
-  </div>
+  <section class="main-body">
+    <div id="credits">
+      <h1><span>Designed</span> by <span class="name">Katerina</span> <span class="name">Coronado</span></h1>
+      <h1><span>Developed</span> by <span class="name">Nastazia</span> <span class="name">Coronado</span></h1>
+    </div>
+  </section>
 </body>
 
 </html>

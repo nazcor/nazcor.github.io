@@ -1,0 +1,22 @@
+[
+    {
+        "name": "OOP Languages",
+        "percent": "85"
+    },
+    {
+        "name": "Databases & Data Analytics",
+        "percent": "65"
+    },
+    {
+        "name": "Full-Stack Development",
+        "percent": "60"
+    },
+    {
+        "name": "Collaboration & Teamwork",
+        "percent": "100"
+    },
+    {
+        "name": "Communication",
+        "percent": "100"
+    }
+]

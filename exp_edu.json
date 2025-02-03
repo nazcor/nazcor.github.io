@@ -1,0 +1,51 @@
+[
+    {
+        "name": "University of California",
+        "start": "20221001T000000-0700",
+        "end": null,
+        "titles": [
+            {
+                "title": "Data Analyst Intern",
+                "start": "20231101T000000-0700",
+                "startDate": "Nov. 2023",
+                "end": null,
+                "endDate": "Present",
+                "description": [
+                    "Develop, deploy, and maintain ad-hoc and weekly reports regarding account and donation data",
+                    "Analyze and present tabular data in a meaningful and readily accessible manner for senior team",
+                    "Demonstrate excellent communication abilities in in-person and remote environments to meet reporting requests and deadline needs in a timely manner",
+                    "Improve completion time and distribution of reports through the use and understanding of Excel Power Query",
+                    "Supervise and train new interns, ensuring that the quality of reports are met"
+                ]
+            },
+            {
+                "title": "Customer Service Representative",
+                "start": "20221001T000000-0700",
+                "startDate": "Oct. 2022",
+                "end": "20231201T000000-0800",
+                "endDate": "Dec. 2023",
+                "description": [
+                    "Familiarity with financial transactions and PII (Personally Identifiable Information) protocols ",
+                    "Demonstrated the ability to analyze diverse situations and identify unique customer issues and needs",
+                    "Confidently communicated accurate information and solutions with a positive attitude",
+                    "Collaborated with upper management and customer service team to ensure customer satisfaction is maintained"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "University of California, Los Angeles",
+        "start": "20200901T000000-0700",
+        "end": "20240601T000000-0700",
+        "titles": [
+            {
+                "title": "B.A. Linguistics & Computer Science",
+                "start": "20200901T000000-0700",
+                "startDate": "Sep. 2020",
+                "end": "20240601T000000-0700",
+                "endDate": "Jun. 2024",
+                "description": []
+            }
+        ]
+    }
+]

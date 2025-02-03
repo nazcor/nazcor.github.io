@@ -1,0 +1,150 @@
+
+/*--- GENERAL ---*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    font-family: "Urbanist", serif;
+    color: #082145;
+}
+
+h1,
+h2,
+h3,
+h1 span,
+#main-2 .list-head {
+    font-family: "Cinzel Decorative", serif;
+    color: #082145;
+}
+
+h1,
+h2,
+h3,
+h1 span {
+    display: inline-block;
+}
+
+h1 {
+    text-shadow: .12rem .1rem #b5bac1;
+}
+
+h1 span::first-letter {
+    font-size: 3.5rem;
+}
+
+section {
+    padding: 2% 20% 5% 20%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.divider {
+    margin-bottom: 1%;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.main-content {
+    max-width: 1620px;
+}
+
+
+
+/*--- BODY ---*/
+
+.main-body {
+    background-image: url(images/Azia\ Website\ Background\ v1.png);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*--- NAV BAR ---*/
+
+nav {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+}
+
+nav div {
+    height: 2rem;
+    color: #bbaba4;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 2% 5%;
+    width: 1440px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+}
+
+nav ul a {
+    color: #bbaba4;
+}
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+    padding: 0 25px;
+}
+
+#logo {
+    position: relative;
+    z-index: 900;
+    height: 5rem;
+}
+
+
+
+/*--- RESPONSIVE FEATURES ---*/
+
+
+@media screen and (max-width: 900px) {
+
+    section {
+        padding: 2% 15% 5% 15%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    section {
+        padding-bottom: 15%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+        
+    h1 span::first-letter {
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    .divider {
+        margin-bottom: 2%;
+    }
+
+}
