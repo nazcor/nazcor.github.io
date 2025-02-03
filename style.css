@@ -57,6 +57,14 @@ a {
     max-width: 1620px;
 }
 
+.wrapper {
+    align-self: center;
+    display: flex;
+    align-content: center;
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+
 
 
 /*--- BODY ---*/
