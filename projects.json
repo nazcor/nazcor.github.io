@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Tugo",
+        "img": "images/tugo-logo.png",
+        "link": "https://github.com/jenpennen/tugo",
+        "description": "On the Tugo Project, I am a <b>Full-Stack Developer</b> and use tools such as <b>HTML/CSS, TypeScript, and ReactNative. Tugo</b> is the mobile platform designed to answer that curiosity by making music-sharing more transparent and social. It bridges the gap between personal listening experiences and social music sharing. With Tugo, you can discover what people around you are listening to, sample their songs, and even shuffle through a diverse mix of music from those nearby."
+    },
+    {
+        "name": "Perspective",
+        "img": "images/perspective-logo.png",
+        "link": "https://github.com/jenpennen/perspective-frontend",
+        "description": "As a <b>Full-Stack Developer of Perspective, I utilize tools such as <b>HTML/CSS, React, Go, and PostgreSQL</b>. Perspective is a social web application aimed at improving communication between UCLA student organizations and the general student population."
+    }
+]

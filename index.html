@@ -35,7 +35,6 @@
     
     /*--- INTRODUCTION SECTION ---*/
     
-
     .main-1-box {
       display: flex;
       flex-direction: column;
@@ -55,39 +54,44 @@
       display: flex;
       justify-content: center;
     }
-
+    
     #main-1-box-2 p {
-        line-height: 3rem;
-        margin: 7% 0 10% 0;
-        width: 85%;
+      line-height: 3rem;
+      margin: 7% 0 10% 0;
+      width: 85%;
     }
-
+    
     #main-1-box-2 .wrapper {
       width: 80%;
     }
-
-    #main-1-box-2 ul {
-      width: 100%;
-      display: flex;
-      column-gap: 15px;
-      align-items: center;
-      justify-content: center;
-    }
     
-    #main-1-box-2 ul li:first-child {
-      list-style: none;
+    #main-1-box-2 ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      column-gap: 1rem;
+    }
+
+    #main-1-box-2 li:first-child {
       width: 15rem;
     }
     
-    #main-1-box-2 ul li {
+    #main-1-box-2 li {
+      display: inline-block;
       list-style: none;
       width: 3rem;
     }
-
-
+    
+    
 
 
     /*--- EDUCATION & EXPERIENCE ---*/
+
+    #main-2 .list-head {
+      font-family: "Cinzel Decorative", serif;
+      color: #082145;
+    }
 
     #main-2-container {
         display: flex;
@@ -483,21 +487,29 @@
     }
 
     @media screen and (max-width: 900px) {
-      
+
       .wrapper {
         width: 90%;
       }
+
+      /*--- INTRODUCTION ---*/
 
       #main-1-box-1 {
         max-width: 15rem;
       }
 
       #main-1-box-2 {
-        max-width: 70%;
+        max-width: 90%;
       }
-      
-      .main-1-box {
-          flex-basis: 100%;
+
+      #main-1-box-2 ul {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        column-gap: 2rem;
+      }
+
+      #main-1-box-2 li:first-child {
+        flex: 100%;
       }
 
         /*--- SKILLS ---*/
@@ -582,25 +594,15 @@
 
     @media screen and (max-width: 400px) {
 
-        .divider {
-            margin-bottom: 1%;
-        }
+      /*--- INTRODUCTION ---*/
 
-        /*--- INTRODUCTION SECTION ---*/
+      #main-1-box-2 li:first-child {
+        width: 10rem;
+      }
 
-        .divider {
-            margin-bottom: 2%;
-        }
-
-        #main-1-box-2 ul {
-            width: 100%;
-        }
-
-        #main-1-box-2 li {
-            position: relative;
-            right: 5%;
-        }
-
+      #main-1-box-2 li {
+        width: 2rem;
+      }
 
         /*--- EDUCATION & EXPERIENCE ---*/
 
@@ -665,11 +667,11 @@
           </div>
           <p>A recent graduate from the University of California, Los Angeles with a Bachelor's in Linguistics & Computer Science with a minor in Theater. Enthusiasitc about Software Development with a particular focus on Full-Stack development. Actively looking for Software Development/Engineering or Data Analysis positions.</p>
           <ul>
-            <li><h3>Connect with me</h3></li>
+            <li><h4>Connect with me</h4></li>
             <li><a target="_blank" href="https://www.linkedin.com/in/nastazia-coronado"><img class="responsive" src="images/5279114_linkedin_network_social_network_linkedin_logo_icon_2.png" height="256" width="256" alt="Linkedin"></a></li>
             <li><a target="_blank" href="https://github.com/nazcor"><img class="responsive" src="images/211904_social_github_icon_2.png" height="256" width="256" alt="Github"></a></li>
             <li><a href="mailto:nascoron@gmail.com"><img class="responsive" src="images/4550857_email_gmail_mail_sending_yahoo_icon_2.png" height="256" width="256" alt="Email"></a></li>
-        </ul>
+          </ul>
         </div>
       </section>
 

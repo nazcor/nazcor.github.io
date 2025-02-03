@@ -14,8 +14,8 @@ html {
 h1,
 h2,
 h3,
-h1 span,
-#main-2 .list-head {
+h4,
+h1 span {
     font-family: "Cinzel Decorative", serif;
     color: #082145;
 }
@@ -78,6 +78,7 @@ nav {
     background-color: #f9f9f9;
     display: flex;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 nav div {
