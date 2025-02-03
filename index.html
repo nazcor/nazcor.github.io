@@ -117,12 +117,6 @@
       width: 80%;
     }
 
-    #cert-lic .divider {
-        align-self: center;
-        justify-self: center;
-        margin-bottom: 5%;
-    }
-
     #cert-lic h3 {
         text-align: center;
         padding-top: 5%;
@@ -326,12 +320,6 @@
         margin-bottom: 30px;
     }
 
-
-    #projects-popups .divider {
-        height: 2rem;
-        margin-bottom: 2%;
-    }
-
     #projects-popups .spacer {
         width: 100%;
         height: 30px;
@@ -418,11 +406,15 @@
     }
 
 
-
+    
     /*--- RESPONSIVE FEATURES ---*/
-
+    
     @media screen and (max-width: 1200px) {
       
+      .wrapper {
+        width: 60%;
+      }
+
       /*--- INTRODUCTION SECTION ---*/
   
       #main-1 {
@@ -460,6 +452,8 @@
         #cert-lic .wrapper {
           width: 50%;
           margin-bottom: 1rem;
+          justify-self: center;
+          align-self: center;
         }
         
         .description li:before {
@@ -485,9 +479,6 @@
 
     @media screen and (max-width: 900px) {
 
-      .wrapper {
-        width: 90%;
-      }
 
       /*--- INTRODUCTION ---*/
 
@@ -605,10 +596,6 @@
 
         #cert-lic {
             text-align: left;
-        }
-
-        #cert-lic .divider {
-          margin-bottom: 2%;
         }
 
         /*--- SKILLS ---*/
