@@ -10,18 +10,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     
-    #main-1,
-    #main-2,
-    #main-3,
+    #intro,
+    #edu-exp,
+    #skills,
     #main-4,
-    #main-5 {
+    #contact {
         display: flex;
     }
 
-    #main-2,
-    #main-3,
+    #edu-exp,
+    #skills,
     #main-4,
-    #main-5 {
+    #contact {
       flex-direction: column;
     }
     
@@ -29,7 +29,7 @@
     
     /*--- INTRODUCTION SECTION ---*/
     
-    .main-1-box {
+    .intro-box {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -37,30 +37,30 @@
       flex: 1;
     }
 
-    #main-1-box-1 {
+    #intro-box-1 {
       max-width: 25rem;
     }
     
-    #main-1-box-1,
-    #main-1-box-2 {
+    #intro-box-1,
+    #intro-box-2 {
       margin-left: auto;
       margin-right: auto;
       display: flex;
       justify-content: center;
     }
     
-    #main-1-box-2 p {
+    #intro-box-2 p {
       line-height: 3rem;
       margin: 7% 0 10% 0;
       width: 85%;
     }
     
-    #main-1-box-2 .wrapper {
+    #intro-box-2 .wrapper {
       width: 80%;
       margin-bottom: 1px;
     }
     
-    #main-1-box-2 ul {
+    #intro-box-2 ul {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -68,11 +68,11 @@
       column-gap: 1rem;
     }
 
-    #main-1-box-2 li:first-child {
+    #intro-box-2 li:first-child {
       width: 15rem;
     }
     
-    #main-1-box-2 li {
+    #intro-box-2 li {
       display: inline-block;
       list-style: none;
       width: 3rem;
@@ -83,33 +83,37 @@
 
     /*--- EDUCATION & EXPERIENCE ---*/
 
-    #main-2 .list-head {
+    #edu-exp .list-head {
       font-family: "Cinzel Decorative", serif;
       color: #082145;
     }
 
-    #main-2-container {
+    #edu-exp-container {
         display: flex;
         column-gap: 5%;
     }
 
-    .main-2-box {
+    .edu-exp-box {
         text-align: left;
         flex-basis: 55%;
     }
 
-    .main-2-box:first-child > div {
+    .edu-exp-box:first-child > div {
       margin-bottom: 25px;
     }
 
     #cert-lic {
-        border: .1rem solid #cadbe6;
+        border: 2px solid #cadbe6;
         border-radius: 3%;
         display: flex;
         align-content: center;
         text-align: center;
         flex-direction: column;
         flex-basis: 40%;
+    }
+
+    #edu-exp ul {
+        padding-left: 40px;
     }
 
     #cert-lic .wrapper {
@@ -122,11 +126,11 @@
         padding-top: 5%;
     }
 
-    .main-2-box h3 {
+    .edu-exp-box h3 {
         margin-top: 2em;
     }
 
-    .main-2-box h3:first-of-type {
+    .edu-exp-box h3:first-of-type {
         margin-top: 0;
     }
 
@@ -217,174 +221,43 @@
     }
 
 
-
-    /*--- PROJECTS ---*/
-
-    #projects-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        column-gap: 5%;
-    }
-
-    #projects-buttons button {
-        border-radius: 50%;
-        border: none;
-        height: 15rem;
-        width: 15rem;
-        box-shadow: 0px 0px 19px 0 rgba(8, 33, 69, 0.30);
-        cursor: pointer;
-    }
-
-    #tugo-button {
-        background: url(images/tugo-logo.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    #perspective-button {
-        background: url(images/perspective-logo.png);
-        background-size: 130%;
-        background-position-x: center;
-        background-position-y: center;
-    }
-
-    #overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 999;
-    }
-
-    #projects-popups {
-        display: flex;
-        justify-content: center;
-    }
-
-    #projects-popups .popup {
-        display: none;
-        background: #f9f9f9;
-        overflow: hidden;
-        border: #082145 2px solid;
-        border-radius: 15%;
-        height: 600px;
-        width: 700px;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1000;
-    }
-
-    .popup .wrapper {
-      display: inline-block;
-    }
-
-    .popup b {
-        font-weight: 600;
-    }
-
-    .popup-description {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 30%;
-    }
-
-    .popup-description p {
-        align-self: center;
-        width: 90%;
-    }
-
-    #projects-popups .tugo .poster {
-        background: linear-gradient(to bottom, transparent, 50%, #f9f9f9), url("images/tugo-logo.png");
-        background-position: center;
-    }
-
-    #projects-popups .perspective .poster {
-        background: linear-gradient(to bottom, transparent, 50%, #f9f9f9), url("images/perspective-logo.png");
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
-        background-size: 100%;
-    }
-
-    #projects-popups .poster {
-        width: 100%;
-        height: 30%;
-        overflow: hidden;
-        margin-bottom: 30px;
-    }
-
-    #projects-popups .spacer {
-        width: 100%;
-        height: 30px;
-    }
-
-    .popup-buttons {
-        position: absolute;
-        width: 100%;
-        bottom: 25px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #projects-popups button,
-    #projects-popups a {
-        margin-top: 20px;
-        background: none;
-        border: none;
-        color: #bbaba4;
-    }
-
-
-    #projects-popups button:hover {
-        cursor: pointer;
-        font-weight: 600;
-    }
-
-
     /*--- CONTACT ME ---*/
 
-    #main-5 h2::before {
+    #contact h2::before {
         content: url(images/Star\ Closed.svg);
         position: relative;
         top: 15px;
         right: 15px;
     }
 
-    #main-5 p {
+    #contact p {
         width: 40%;
         line-height: 2em;
         margin: 2% 30% 0 30%;
     }
 
-    #main-5 img {
+    #contact img {
         margin-right: 1rem;
     }
 
-    #contact {
+    #contact-wrapper {
         display: flex;
         justify-content: center;
     }
 
-    #contact ul {
+    #contact-wrapper ul {
         list-style: none;
         text-align: left;
         margin-top: 1rem;
     }
 
-    #contact a {
+    #contact-wrapper a {
         display: flex;
         align-items: center;
         margin: 1% 0 10% 0;
     }
 
-    #contact a:first-of-type {
+    #contact-wrapper a:first-of-type {
         margin-top: 10%;
     }
 
@@ -398,7 +271,7 @@
     /*--- FOOTER ---*/
 
     #main-6 {
-        padding-bottom: 1%;
+        margin-bottom: 1%;
     }
 
     #main-6 a {
@@ -417,24 +290,24 @@
 
       /*--- INTRODUCTION SECTION ---*/
   
-      #main-1 {
+      #intro {
           flex-wrap: wrap;
           flex-direction: column;
           row-gap: 30px;
       }
       
       
-      #main-1-box-2 p {
+      #intro-box-2 p {
             line-height: 2rem;
         }
 
         /*--- EDUCATION & EXPERIENCE ---*/
 
-        #main-2-container {
+        #edu-exp-container {
             flex-wrap: wrap;
         }
 
-        .main-2-box {
+        .edu-exp-box {
             flex-basis: 100%;
         }
         
@@ -463,18 +336,6 @@
         .list-item:last-of-type {
             margin-bottom: 8%;
         }
-
-        /*--- PROJECTS ---*/
-        
-        #projects-buttons button {
-          height: 10rem;
-            width: 10rem;
-          }
-
-        #projects-popups .popup {
-            height: 500px;
-            width: 600px;
-        }
     }
 
     @media screen and (max-width: 900px) {
@@ -482,21 +343,21 @@
 
       /*--- INTRODUCTION ---*/
 
-      #main-1-box-1 {
+      #intro-box-1 {
         max-width: 15rem;
       }
 
-      #main-1-box-2 {
+      #intro-box-2 {
         max-width: 90%;
       }
 
-      #main-1-box-2 ul {
+      #intro-box-2 ul {
         flex-wrap: wrap;
         row-gap: 1rem;
         column-gap: 2rem;
       }
 
-      #main-1-box-2 li:first-child {
+      #intro-box-2 li:first-child {
         flex: 100%;
       }
 
@@ -508,69 +369,14 @@
         
         /*--- CONTACT ME ---*/
         
-        #main-5 p {
+        #contact p {
             width: 60%;
             line-height: 2em;
             margin: 2% 20% 0 20%;
         }
     }
 
-    @media screen and (max-width: 600px) {
-
-        /*--- PROJECTS ---*/
-
-        #projects-popups .popup {
-            height: 100%;
-            width: 100%;
-            border: none;
-            border-radius: 0%;
-        }
-    }
-
-    @media screen and (max-height: 600px) {
-        #projects-popups .poster {
-            display: none;
-        }    
-    }
-
-    @media screen and (max-height: 500px) {
-
-        
-        /*--- PROJECTS ---*/
-        
-        #projects-popups .popup {
-            height: 100%;
-            width: 100%;
-            border: none;
-            border-radius: 0%;
-        }
-        
-        .popup h1 {
-            font-size: 5vh;
-        }
-        
-        #projects-popups h1 {
-            margin-top: 20px;
-        }
-        
-        #projects-buttons button {
-            height: 6rem;
-            width: 6rem;
-        }
-    }
-
     @media screen and (max-width: 500px) {
-        
-        /*--- PROJECTS ---*/
-
-        #projects-popups h1 {
-            margin-top: 20px;
-        }
-        
-        #projects-buttons button {
-            height: 6rem;
-            width: 6rem;
-        }
 
         /*--- SKILLS ---*/
         .list-item {
@@ -584,11 +390,11 @@
 
       /*--- INTRODUCTION ---*/
 
-      #main-1-box-2 li:first-child {
+      #intro-box-2 li:first-child {
         width: 10rem;
       }
 
-      #main-1-box-2 li {
+      #intro-box-2 li {
         width: 2rem;
       }
 
@@ -614,7 +420,7 @@
 
         /*--- CONTACT ME ---*/
         
-        #main-5 p {
+        #contact p {
             width: 90%;
             line-height: 2em;
             margin: 3% 5% 0 5%;
@@ -629,8 +435,8 @@
     <div class="main-content">
       <a href="index.html" id="logo"><img class="responsive" src="images/Logo@2x.png" height="253" width="283" alt="NC Logo"></a>
       <ul>
-        <li><a href="#main-4">Projects</a></li>
-        <li><a href="#main-5">Contact Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
     </div>
   </nav>
@@ -640,11 +446,11 @@
   <div class="main-body">
 
       <!-- INTRODUCTION -->
-      <section class="main-content" id="main-1">
-        <div class="main-1-box" id="main-1-box-1">
+      <section class="main-content" id="intro">
+        <div class="intro-box" id="intro-box-1">
           <img class="responsive" src="images/Azia Profile Picture@2x.png" height="934" width="742" alt="Nastazia Coronado Profile Picture">
         </div>
-        <div class="main-1-box" id="main-1-box-2">
+        <div class="intro-box" id="intro-box-2">
           <h1><span>Nastazia</span> <span>Coronado</span></h1>
           <div class="wrapper">
             <img class="responsive" src="images/Title Divider@2x.png" height="220" width="1786" alt="Divider">
@@ -662,14 +468,14 @@
 
 
       <!-- EDUCATION & EXPERIENCE -->
-      <section class="main-content" id="main-2">
+      <section class="main-content" id="edu-exp">
         <h1><span>Education</span> & <span>Experience</span></h1> <br>
         <div class="wrapper">
           <img class="divider responsive" src="images/Title Divider@2x.png" height="220" width="1786" alt="Divider">
         </div>
-        <div id="main-2-container">
-          <div class="main-2-box" id="titles"></div>
-          <div class="main-2-box" id="cert-lic">
+        <div id="edu-exp-container">
+          <div class="edu-exp-box" id="titles"></div>
+          <div class="edu-exp-box" id="cert-lic">
             <h3>Certifications & Licenses</h3> <br>
             <div class="wrapper">
               <img class="responsive" src="images/Title Divider@2x.png" alt="Divider" height="220" width="1786">
@@ -684,7 +490,7 @@
 
 
       <!-- SKILLS -->
-      <section class="main-content" id="main-3">
+      <section class="main-content" id="skills">
         <h1><span>Skills</span></h1>
         <div class="wrapper">
           <img class="responsive" src="images/Title Divider@2x.png" height="220" width="1786" alt="Divider">
@@ -694,63 +500,15 @@
 
 
 
-      <!-- PROJECTS -->
-      <section class="main-content" id="main-4">
-        <h1><span>Projects</span></h1> <br>
-        <div class="wrapper">
-          <img class="responsive" src="images/Title Divider@2x.png" height="220" width="1786" alt="Divider">
-        </div>
-        <div id="projects-buttons" class="hover">
-          <button onclick="popupFn(this.value)" value="tugo" class="tugo" id="tugo-button"></button>
-          <button onclick="popupFn(this.value)" value="perspective" class="perspective" id="perspective-button"></button>
-        </div>
-        <div id="overlay"></div>
-        <div id="projects-popups">
-          <div class="tugo popup" value="tugo">
-            <div class="poster"></div>
-            <h1>Tugo</h1> <br>
-            <div class="wrapper">
-              <img class="responsive" src="images/Title Divider@2x.png" height="220" width="1786" alt="Divider">
-            </div>
-            <div class="popup-description">
-              <p>On the Tugo Project, I am a <b>Full-Stack Developer</b> and use tools such as <b>TypeScript and ReactNative</b>. Tugo is the mobile platform designed to answer that curiosity by making music-sharing more transparent and social. It bridges the gap between personal listening experiences and social music sharing. With Tugo, you can discover what people around you are listening to, sample their songs, and even shuffle through a diverse mix of music from those nearby.</p>
-            </div>
-            <div class="spacer"></div>
-            <div class="popup-buttons">
-              <button><a target="_blank" href="https://github.com/jenpennen/tugo">Visit Page</a></button>
-              <button onclick="closeFn(this.value)" value="tugo">Close</button>
-            </div>
-          </div>
-
-          <div class="perspective popup" value="perspective">
-            <div class="poster"></div>
-            <h1>Perspective</h1> <br>
-            <div class="wrapper">
-              <img class="responsive" src="images/Title Divider@2x.png" height="220" width="1786" alt="Divider">
-            </div>
-            <div class="popup-description">
-              <p>As a <b>Full-Stack Developer</b> of Perspective, I utilize tools such as <b>HTML/CSS, React, Go, and PostgreSQL</b>. Perspective is a social web application aimed at improving communication between UCLA student organizations and the general student population.</p>
-            </div>
-            <div class="spacer"></div>
-            <div class="popup-buttons">
-              <button><a target="_blank" href="https://github.com/jenpennen/perspective-frontend">Visit Page</a></button>
-              <button onclick="closeFn(this.value)" value="perspective">Close</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
       <!-- CONTACT ME -->
-      <section class="main-content" id="main-5">
+      <section class="main-content" id="contact">
         <h1><span>Contact</span> <span>Me</span></h1> <br>
         <div class="wrapper">
           <img class="responsive" src="images/Title Divider@2x.png" height="220" width="1786" alt="Divider">
         </div>
         <h2>Let's Connect</h2>
         <p>Thank you for checking out my website! Feel free to connect with me further by sending me an email, connecting with me on LinkedIn, or following my Github.</p>
-        <div id="contact">
+        <div id="contact-wrapper">
           <ul>
             <li>
               <a href="mailto:nascoron@gmail.com">
@@ -790,7 +548,6 @@
 
   
   <script src="circle-progress.min.js" type="module"></script> 
-  <script src="projects.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function(){
@@ -840,9 +597,9 @@
           const skill = $("<div class='skill'>");
           const val = "<circle-progress text-format='percent' value='" +
                       result[i].percent +
-                      "' max='100'></circle-progress><h3>" +
+                      "' max='100'></circle-progress><h4>" +
                       result[i].name +
-                      "</h3>";
+                      "</h4>";
           
           skill.append(val);
 

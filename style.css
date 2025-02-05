@@ -11,6 +11,10 @@ html {
     color: #082145;
 }
 
+ul {
+    padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -36,7 +40,7 @@ h1 span::first-letter {
 }
 
 section {
-    padding: 2% 20% 5% 20%;
+    margin: 2% 15% 5% 15%;
     text-align: center;
 }
 
@@ -86,7 +90,7 @@ nav {
     background-color: #f9f9f9;
     display: flex;
     justify-content: center;
-    padding-bottom: 2rem;
+    padding: 2rem auto;
 }
 
 nav div {
@@ -125,19 +129,15 @@ nav ul li {
 
 /*--- RESPONSIVE FEATURES ---*/
 
-
-@media screen and (max-width: 900px) {
-
-    section {
-        padding: 2% 15% 5% 15%;
-    }
-
-}
-
 @media screen and (max-width: 700px) {
 
+    nav {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
     section {
-        padding-bottom: 15%;
+        margin-bottom: 15%;
     }
 
 }

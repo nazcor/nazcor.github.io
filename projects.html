@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects | Nastazia Coronado</title>
+  <link rel="icon" href="images/Logo@2x.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html {
+        height: 100%;
+    }
+
+    #title {
+      display: flex;
+      justify-content: center;
+    }
+
+    .wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      width: 20rem;
+      margin-bottom: 0;
+    }
+
+    body {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-body {
+      justify-content: start;
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 2%;
+    }
+
+    .projects-container {
+      display: inline-block;
+      text-align: left;
+    }
+    
+    .headers {
+      position: relative;
+      left: 0;
+    }
+    
+    #personal,
+    #freelance {
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+      row-gap: 2rem;
+      margin: 2rem;
+    }
+    
+
+    .project-wrapper {
+      width: 15rem;
+      margin-bottom: 15px;
+    }
+
+    .project-card {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 200px;
+      width: 300px;
+      background: #e5ebee;
+      border-radius: 6px;
+      box-shadow: 0px 0px 10px 3px rgba(8,33,69,0.2);
+    }
+    
+    .tags li {
+      background-color: #cadbe6;
+      padding: 2px 5px;
+      border-radius: 6px;
+      display: inline-block;
+      list-style: none;
+      margin: 2px;
+    }
+
+
+
+    /*--- PROJECT POPUPS ---*/
+
+    .overlay {
+      background: #00000083;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .project-popup {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 1000;
+      height: 60%;
+      width: 60%;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: #f9f9f9;
+      border-radius: 6px;
+      padding: 4%;
+      overflow: scroll;
+    }
+
+    .name {
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      width: 15rem;
+      text-align: center;
+    }
+
+    .closer {
+      display: inline-flex;
+      width: 100%;
+      margin-top: auto;
+      align-self: center;
+      justify-self: end;
+      padding-top: 25px;
+    }
+    
+    .closer * {
+      margin: auto;
+      color: #bbaba4;
+    }
+    
+
+
+    /*--- RESPONSIVE FEATURES ---*/
+
+    @media only screen and (max-width: 1000px) {
+
+      .projects-container {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .headers {
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 869px) {
+      .wrapper {
+        width: 15rem;
+      }
+      
+      #personal,
+      #freelance {
+        justify-content: center;
+      }
+
+      .project-popup {
+        height: auto;
+        width: auto;
+        margin: 0;
+        border-radius: 0;
+      }
+    }
+
+    @media only screen and (max-width: 300px) {
+      .wrapper {
+        width: 10rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="main-content">
+    <a href="index.html"><img id="logo" class="responsive" src="images/Logo@2x.png" height="253" width="283" alt="NC Logo"></a>
+    <ul>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="/#contact">Contact Me</a></li>
+    </ul>
+    </div>
+  </nav>
+
+  <div class="main-body">
+    <div class="main-content">
+      <section id="title">
+        <div>
+          <h1><span>P</span>rojects</h1>
+          <div class="wrapper">
+            <img class="responsive" src="images/Title Divider@2x.png" height="220" width="1786" alt="Divider">
+          </div>
+        </div>
+      </section>
+        
+      <section class="projects-container">
+        <div class="headers">
+          <h2>Personal Projects</h2>
+        </div>
+        <div id="personal"></div>
+      </section>
+      
+      <section class="projects-container">
+        <div class="headers">
+          <h2>Freelance</h2>
+        </div>
+        <div id="freelance"></div>
+      </section>
+      
+      
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      $.ajax({url: "projects.json", success: function(result){
+        for (let i = 0; i < result.length; i++) {
+          el = result[i];
+
+          let card = "<div class='project-card'>" +
+                     "<h3>" +
+                      el.name +
+                      "</h3>" +
+                      "<div class='wrapper project-wrapper'>" +
+                        "<img class='responsive' src='images/Title Divider@2x.png' height='220' width='1786' alt='Divider'>" +
+                        "</div>" +
+                        "<ul class='tags'>";
+                          
+          for (let j = 0; j < el.tags.length; j++) {
+            card += "<li>" + el.tags[j] + "</li>";
+          }
+          
+          card += "</ul> </div>";
+          card = $(card);
+          card.attr("id", el.name);
+          card.attr("value", i);
+          
+          if (el.type === "personal") {          
+            $("#personal").append(card);
+
+            card.on("click", function(){
+              let index = Number(card.attr("value"));
+              let popup = "<div class='overlay'><div class='project-popup'><div class='name'><h1>" +
+                          result[index].name +
+                          "<img class='responsive' src='images/Title Divider@2x.png' height='220' width='1786' alt='Divider'>" +
+                          "</div><div class='description'>" +
+                            result[index].description +
+                          "</div><div class='closer'><a target='_blank' href=" +
+                            result[index].link +
+                          ">Link</a>" +
+                          "<div class='close'>Close</div></div></div></div>";
+
+              $(".main-body").append(popup);
+
+              $(".close").on({
+                mouseover: function() {
+                  $(this).css("cursor", "pointer");
+                },
+                click: function() {
+                  $(".project-popup").remove();
+                  $(".overlay").remove();
+                }
+              })
+            });
+          }
+          else {
+            $("#freelance").append(card);
+
+            card.on("click", function(event){
+              event.preventDefault();
+              if(el.link !== null) {
+                window.open(el.link, "_blank");
+              }
+              else {
+                alert("The link for this project has not been added yet.");
+              };
+            });
+          }
+        }
+        
+
+        $(".project-card").on({
+          mouseover: function() {
+            $(this).css("cursor", "pointer");
+            $(this).css("border", "2px solid #082145");
+          },
+          mouseout: function() {
+            $(this).css("border", "none");
+          }
+        });
+      }});
+    });
+    </script>
+</body>
+
+</html>
