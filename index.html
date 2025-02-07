@@ -9,18 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+
+    .wrapper {
+      width: 20rem;
+    }
     
-    #intro,
-    #edu-exp,
-    #skills,
-    #main-4,
-    #contact {
+    section {
         display: flex;
     }
 
     #edu-exp,
     #skills,
-    #main-4,
     #contact {
       flex-direction: column;
     }
@@ -56,7 +55,6 @@
     }
     
     #intro-box-2 .wrapper {
-      width: 80%;
       margin-bottom: 1px;
     }
     
@@ -118,7 +116,6 @@
 
     #cert-lic .wrapper {
       margin-bottom: 2rem;
-      width: 80%;
     }
 
     #cert-lic h3 {
@@ -283,10 +280,6 @@
     /*--- RESPONSIVE FEATURES ---*/
     
     @media screen and (max-width: 1200px) {
-      
-      .wrapper {
-        width: 60%;
-      }
 
       /*--- INTRODUCTION SECTION ---*/
   
@@ -323,7 +316,6 @@
         }
 
         #cert-lic .wrapper {
-          width: 50%;
           margin-bottom: 1rem;
           justify-self: center;
           align-self: center;

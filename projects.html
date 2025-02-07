@@ -117,14 +117,17 @@
       background: #f9f9f9;
       border-radius: 6px;
       padding: 4%;
-      overflow: scroll;
+      overflow-y: scroll;
     }
 
     .name {
       margin: 0 auto;
-      margin-bottom: 2rem;
       width: 15rem;
       text-align: center;
+    }
+    
+    .duration {
+      margin: 1rem 0;
     }
 
     .closer {
@@ -140,6 +143,7 @@
       margin: auto;
       color: #bbaba4;
     }
+
     
 
 
@@ -265,45 +269,44 @@
           
           if (el.type === "personal") {          
             $("#personal").append(card);
-
-            card.on("click", function(){
-              let index = Number(card.attr("value"));
-              let popup = "<div class='overlay'><div class='project-popup'><div class='name'><h1>" +
-                          result[index].name +
-                          "<img class='responsive' src='images/Title Divider@2x.png' height='220' width='1786' alt='Divider'>" +
-                          "</div><div class='description'>" +
-                            result[index].description +
-                          "</div><div class='closer'><a target='_blank' href=" +
-                            result[index].link +
-                          ">Link</a>" +
-                          "<div class='close'>Close</div></div></div></div>";
-
-              $(".main-body").append(popup);
-
-              $(".close").on({
-                mouseover: function() {
-                  $(this).css("cursor", "pointer");
-                },
-                click: function() {
-                  $(".project-popup").remove();
-                  $(".overlay").remove();
-                }
-              })
-            });
           }
           else {
             $("#freelance").append(card);
-
-            card.on("click", function(event){
-              event.preventDefault();
-              if(el.link !== null) {
-                window.open(el.link, "_blank");
-              }
-              else {
-                alert("The link for this project has not been added yet.");
-              };
-            });
           }
+
+          card.on("click", function(){
+            let index = Number(card.attr("value"));
+            let popup = "<div class='overlay'><div class='project-popup'><div class='name'><h1>" +
+                        result[index].name +
+                        "<img class='responsive' src='images/Title Divider@2x.png' height='220' width='1786' alt='Divider'>" +
+                        "</div>";
+
+            if (result[index].start != null && result[index].end != null) {
+              popup += "<div class='duration'>" +
+                       result[index].start + " - " +
+                       result[index].end +
+                       "</div>";
+            }
+
+            popup += "<div class='description'>" +
+                     result[index].description +
+                     "</div><div class='closer'><a target='_blank' href=" +
+                     result[index].link +
+                     ">Link</a>" +
+                     "<div class='close'>Close</div></div></div></div>";
+
+            $(".main-body").append(popup);
+
+            $(".close").on({
+              mouseover: function() {
+                $(this).css("cursor", "pointer");
+              },
+              click: function() {
+                $(".project-popup").remove();
+                $(".overlay").remove();
+              }
+            })
+          });
         }
         
 
