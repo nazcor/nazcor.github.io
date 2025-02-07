@@ -602,6 +602,10 @@
           $("#skill-box").append(skill);
         }
       }});
+
+      if (window.location.href.includes("contact")) {
+        $("html, body").animate({ scrollTop: $(document).height() + 1550});
+      }
     });
   </script>
 </body>
