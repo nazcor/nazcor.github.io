@@ -604,7 +604,7 @@
       }});
 
       if (window.location.href.includes("contact")) {
-        $("html, body").animate({ scrollTop: $(document).height() + 1550});
+        $("html, body").animate({ scrollTop: $(document).height() + $("#intro").outerHeight(true) + $("#edu-exp").outerHeight(true) + $("#skills").outerHeight(true)});
       }
     });
   </script>
