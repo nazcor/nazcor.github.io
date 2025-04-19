@@ -188,15 +188,12 @@
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-circle-progress/dist/circle-progress.min.js" type="module"></script>
+    <script src="checkBrowserType.js"></script>
+    <script>
+        mobileCheck();
+    </script>
     <script>
         $(document).ready(function(){
-            if(window.innerWidth <= 768) {
-                $('body').addClass('mobile');
-            }
-            else {
-                $('body').addClass('desktop');
-            }
-
             $('header').load('navbar.html');
             $('.sparkle-divider').load('sparkle_divider.html');
 

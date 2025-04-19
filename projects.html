@@ -15,7 +15,7 @@
         section { align-items: flex-start; margin-bottom: 5rem; flex-direction: column; }
         section > div { display: flex; }
         h3 { font-size: 2rem; }
-        button { background: #e5ebee; min-width: 30rem; width: 30rem; height: 20rem; border-radius: 6px; }
+        button { background: #e5ebee; min-width: 30rem; width: 30rem; height: 20rem; border-radius: 6px; border: #082145 2px solid; }
         button:hover { cursor: pointer; }
         button:hover h3 { text-decoration: underline; }
         #personal, #freelance { display: flex; column-gap: 2rem; position: relative; }
@@ -70,15 +70,12 @@
     </div>  
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="checkBrowserType.js"></script>
+    <script>
+        mobileCheck();
+    </script>
     <script>
         $(document).ready(function(){
-            if(window.innerWidth <= 768) {
-                $('body').addClass('mobile');
-            }
-            else {
-                $('body').addClass('desktop');
-            }
-
             $('header').load('navbar.html');
             $('.sparkle-divider').load('sparkle_divider.html');
 
