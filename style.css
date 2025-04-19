@@ -2,6 +2,7 @@
 html {font-size: 10px; min-height: 100%; }
 html, body { margin: 0; font-family: "Urbanist", serif; color: #082145; width: 100%; }
 body { font-size: 1.6rem; scroll-behavior: smooth; min-height: 100%; position: relative; }
+a:focus { outline: none; }
 .img-responsive { display: block; width: 100%; height: auto; }
 .wide-container { max-width: 1620px; }
 h1, h2, h3, h4 { font-family: "Cinzel Decorative", serif; color: #082145; }
