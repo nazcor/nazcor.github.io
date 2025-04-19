@@ -51,5 +51,5 @@ section:last-child { margin-bottom: 0; padding-bottom: 15rem; }
 @media (max-width: 818px) {
     section { margin: 0 10rem 15rem; }
 }
-.mobile section { margin: 0 6rem 5rem; }
+.mobile section { margin: 0 2rem 5rem; }
 .mobile section:last-child { padding-bottom: 5rem; margin-bottom: 0; }
