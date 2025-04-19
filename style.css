@@ -1,158 +1,55 @@
-
-/*--- GENERAL ---*/
-
-html {
-    scroll-behavior: smooth;
+/* GENERAL */
+html {font-size: 10px; min-height: 100%; }
+html, body { margin: 0; font-family: "Urbanist", serif; color: #082145; width: 100%; }
+body { font-size: 1.6rem; scroll-behavior: smooth; min-height: 100%; position: relative; }
+.img-responsive { display: block; width: 100%; height: auto; }
+.wide-container { max-width: 1620px; }
+h1, h2, h3, h4 { font-family: "Cinzel Decorative", serif; color: #082145; }
+h1 { font-size: 3rem; margin: 0; line-height: 1.5; }
+h1 span { font-size: 4.5rem; }
+h2 span { font-size: 3.5rem; }
+.title { text-align: center; }
+a:hover, a:visited  { text-decoration: none; color: #082145; }
+a, a:focus, a:active { text-decoration: underline; color: #082145; }
+@media (max-width: 1210px) {
+    body { font-size: 1.4rem; }
+    h1 { font-size: 2rem; }
+    h1 span { font-size: 3.5rem; }
+    h3 { font-size: 1.4rem; }
 }
-
-* {
-    margin: 0;
-    font-family: "Urbanist", serif;
-    color: #082145;
+@media (max-width: 865px) {
+    body { font-size: 1.4rem; }
+    h1 { font-size: 2rem; }
+    h1 span { font-size: 3.5rem; }
+    h3 { font-size: 1.4rem; }
 }
+.mobile  { font-size: 1.4rem; }
+.mobile h1 { font-size: 1.8rem; }
+.mobile h1 span { font-size: 2.8rem; }
+.mobile h3 { font-size: 1.4rem; }
 
-ul {
-    padding: 0;
+
+
+/* NAV BAR */
+header { background-color: #f9f9f9; }
+.navbar { margin: 0 auto; display: flex; align-items: center; padding: 2rem; }
+.action-buttons { margin-left: auto; justify-self: flex-end; }
+.action-buttons a { padding: 0 3rem; } 
+.action-buttons a:hover, .action-buttons a:visited { text-decoration: none; }
+.action-buttons a, .action-buttons a:focus, .action-buttons a:active { font-weight: 600; color: #bbaba4; text-decoration: underline; }
+
+
+
+/* MAIN CONTENT */
+.desktop .main-content { background-image: url('assets/041325_background_img.png'); background-size: 100%; overflow: hidden; min-height: 100%; }
+.mobile .main-content { background: #f9f9f9; max-width: 100%; }
+.main-content { overflow-x: hidden; }
+.main-content .wide-container { margin: 0 auto; min-height: 100vh }
+section { display: flex; justify-content: center; align-items: center; margin: 0 20rem 15rem; }
+section:last-child { margin-bottom: 0; padding-bottom: 15rem; }
+.sparkle-divider { width: 100%; }
+@media (max-width: 818px) {
+    section { margin: 0 10rem 15rem; }
 }
-
-h1,
-h2,
-h3,
-h4,
-h1 span {
-    font-family: "Cinzel Decorative", serif;
-    color: #082145;
-}
-
-h1,
-h2,
-h3,
-h1 span {
-    display: inline-block;
-}
-
-h1 {
-    text-shadow: .12rem .1rem #b5bac1;
-}
-
-h1 span::first-letter {
-    font-size: 3.5rem;
-}
-
-section {
-    margin: 2% 15% 5% 15%;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-.divider {
-    margin-bottom: 1%;
-}
-
-.responsive {
-    width: 100%;
-    height: auto;
-}
-
-.main-content {
-    max-width: 1620px;
-}
-
-.wrapper {
-    align-self: center;
-    display: flex;
-    align-content: center;
-    margin-bottom: 3rem;
-  }
-
-
-
-/*--- BODY ---*/
-
-.main-body {
-    background-image: url(images/Azia\ Website\ Background\ v1.png);
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-/*--- NAV BAR ---*/
-
-nav {
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    padding: 2rem auto;
-}
-
-nav div {
-    height: 2rem;
-    color: #bbaba4;
-    font-weight: 600;
-    margin-top: 20px;
-    padding: 2% 5%;
-    width: 1440px;
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    margin-left: auto;
-}
-
-nav ul a {
-    color: #bbaba4;
-}
-
-nav ul li {
-    list-style: none;
-    text-align: center;
-    padding: 0 25px;
-}
-
-#logo {
-    position: relative;
-    z-index: 900;
-    width: 6rem;
-}
-
-
-
-/*--- RESPONSIVE FEATURES ---*/
-
-@media screen and (max-width: 700px) {
-
-    nav {
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-    }
-
-    section {
-        margin-bottom: 15%;
-    }
-
-}
-
-@media screen and (max-width: 500px) {
-        
-    h1 span::first-letter {
-        font-size: 2.5rem;
-    }
-    
-}
-
-@media screen and (max-width: 400px) {
-
-    .divider {
-        margin-bottom: 2%;
-    }
-
-}
+.mobile section { margin: 0 6rem 5rem; }
+.mobile section:last-child { padding-bottom: 5rem; margin-bottom: 0; }

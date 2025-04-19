@@ -1,15 +1,31 @@
 [
     {
+        "name": "Living Spaces Furniture",
+        "start": "20250201T000000-0700",
+        "end": null,
+        "titles": [
+            {
+                "title": "Jr. Front End Web Developer",
+                "start": "20250201T000000-0700",
+                "startDate": "Feb. 2025",
+                "end": null,
+                "endDate": "Present",
+                "description": [
+                ]
+            }
+        ]
+    },
+    {
         "name": "University of California",
         "start": "20221001T000000-0700",
-        "end": null,
+        "end": "20250201T000000-0700",
         "titles": [
             {
                 "title": "Data Analyst Intern",
                 "start": "20231101T000000-0700",
                 "startDate": "Nov. 2023",
-                "end": null,
-                "endDate": "Present",
+                "end": "20250201T000000-0700",
+                "endDate": "Feb. 2025",
                 "description": [
                     "Develop, deploy, and maintain ad-hoc and weekly reports regarding account and donation data",
                     "Analyze and present tabular data in a meaningful and readily accessible manner for senior team",

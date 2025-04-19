@@ -1,5 +1,6 @@
 [
     {
+        "id": "tugo",
         "name": "Tugo",
         "link": "https://github.com/jenpennen/tugo",
         "start": null,
@@ -15,6 +16,7 @@
         "type": "personal"
     },
     {
+        "id": "perspective",
         "name": "Perspective",
         "link": "https://github.com/jenpennen/perspective-frontend",
         "start": "Oct. 2024",
@@ -31,6 +33,7 @@
         "type": "personal"
     },
     {
+        "id": "ben-sosa-construction",
         "name": "Ben Sosa Construction",
         "link": "https://www.bensosaconstruction.com/",
         "start": "Jan. 2025",

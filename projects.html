@@ -1,327 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Projects | Nastazia Coronado</title>
-  <link rel="icon" href="images/Logo@2x.png">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    html {
-        height: 100%;
-    }
-
-    #title {
-      display: flex;
-      justify-content: center;
-    }
-
-    .wrapper {
-      margin-left: auto;
-      margin-right: auto;
-      width: 20rem;
-      margin-bottom: 0;
-    }
-
-    body {
-      min-height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .main-body {
-      justify-content: start;
-      flex: 1;
-    }
-
-    section {
-      margin-bottom: 2%;
-    }
-
-    .projects-container {
-      display: inline-block;
-      text-align: left;
-    }
-    
-    .headers {
-      position: relative;
-      left: 0;
-    }
-    
-    #personal,
-    #freelance {
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 2rem;
-      row-gap: 2rem;
-      margin: 2rem;
-    }
-    
-
-    .project-wrapper {
-      width: 15rem;
-      margin-bottom: 15px;
-    }
-
-    .project-card {
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 200px;
-      width: 300px;
-      background: #e5ebee;
-      border-radius: 6px;
-      box-shadow: 0px 0px 10px 3px rgba(8,33,69,0.2);
-    }
-    
-    .tags li {
-      background-color: #cadbe6;
-      padding: 2px 5px;
-      border-radius: 6px;
-      display: inline-block;
-      list-style: none;
-      margin: 2px;
-    }
-
-
-
-    /*--- PROJECT POPUPS ---*/
-
-    .overlay {
-      background: #00000083;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: 999;
-    }
-
-    .project-popup {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
-      z-index: 1000;
-      height: 60%;
-      width: 60%;
-      margin: auto;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: #f9f9f9;
-      border-radius: 6px;
-      padding: 4%;
-      overflow-y: scroll;
-    }
-
-    .name {
-      margin: 0 auto;
-      width: 20rem;
-      text-align: center;
-    }
-    
-    .duration {
-      margin: 1rem 0;
-    }
-
-    .closer {
-      display: inline-flex;
-      width: 100%;
-      margin-top: auto;
-      align-self: center;
-      justify-self: end;
-      padding-top: 25px;
-    }
-    
-    .closer * {
-      margin: auto;
-      color: #bbaba4;
-    }
-
-    
-
-
-    /*--- RESPONSIVE FEATURES ---*/
-
-    @media only screen and (max-width: 1000px) {
-      .projects-container {
-        padding: 0;
-      }
-
-      #personal,
-      #freelance {
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 1rem;
-        row-gap: 2rem;
-        margin: 2rem;
-      }
-    }
-    
-    @media only screen and (max-width: 869px) {
-      .projects-container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .headers {
-        text-align: center;
-      }
-
-      .wrapper {
-        width: 15rem;
-      }
-      
-      #personal,
-      #freelance {
-        justify-content: center;
-      }
-
-      .project-popup {
-        height: auto;
-        width: auto;
-        margin: 0;
-        border-radius: 0;
-      }
-    }
-
-    @media only screen and (max-width: 300px) {
-      .wrapper {
-        width: 10rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/Logo@2x.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Projects | Nastazia Coronado</title>
+    <link rel="stylesheet" href="style.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- NAVBAR -->
-  <nav>
+    <style>
+        .wide-container > .title .sparkle-divider svg { width: 30rem; }
+        .wide-container > .title { margin-bottom: 5rem; }
+        section { align-items: flex-start; margin-bottom: 5rem; flex-direction: column; }
+        section > div { display: flex; }
+        h3 { font-size: 2rem; }
+        button { background: #e5ebee; min-width: 30rem; width: 30rem; height: 20rem; border-radius: 6px; }
+        button:hover { cursor: pointer; }
+        button:hover h3 { text-decoration: underline; }
+        #personal, #freelance { display: flex; column-gap: 2rem; position: relative; }
+        .desktop #personal, .desktop #freelance { column-gap: 2rem; flex-wrap: wrap; justify-content: space-between; row-gap: 2rem; }
+        .mobile #personal, .mobile #freelance { overflow-x: scroll; max-width: 100%; padding-bottom: 2rem; padding-right: 15rem; }
+
+        .project-tags { list-style: none; font-family: "Urbanist", serif; display: flex; flex-wrap: wrap; column-gap: .5rem; row-gap: .5rem; padding: 0 1rem; justify-content: center; }
+        .project-tags li { padding: .5rem; background-color: #cadbe6; border-radius: 2px; }
+
+        dialog { position: absolute; border: none; }
+        dialog h2 { text-align: center; margin: 0 auto; width: max-content; }
+        .desktop dialog { position: absolute; top: 0; bottom: 0; height: 60rem; width: 80rem; padding: 4rem; border-radius: 6px; }
+        @media (max-width: 1600px) {
+            .desktop dialog { height: 40rem; width: 60rem; }
+        }
+        @media (max-width: 818px) {
+            .desktop dialog { height: 30rem; width: 40rem; }
+        }
+        .mobile dialog { top: 0; height: 100%; width: 100%; }
+        dialog .sparkle-divider { width: min-content; margin: 0 auto; }
+        .dialog-action-buttons { display: flex; width: 100%; justify-content: space-around; position: absolute; bottom: 5rem; left: 0; }
+        .desktop dialog::backdrop { background: rgba(0, 0, 0, 0.4); }
+        .mobile dialog::backdrop { background: #fff; }
+        .modal-open { position: fixed; overflow: hidden; }
+    </style>
+
+    <header></header>
+
     <div class="main-content">
-    <a href="index.html"><img id="logo" class="responsive" src="images/Logo@2x.png" height="253" width="283" alt="NC Logo"></a>
-    <ul>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="/#contact">Contact Me</a></li>
-    </ul>
-    </div>
-  </nav>
+        <div class="wide-container">
+            <div class="title">
+                <h1>
+                    <span>P</span>rojects
+                </h1>
+                <div class="sparkle-divider"></div>
+            </div>
 
-  <div class="main-body">
-    <div class="main-content">
-      <section id="title">
-        <div>
-          <h1><span>P</span>rojects</h1>
-          <div class="wrapper">
-            <img class="responsive" src="images/Title Divider@2x.png" height="220" width="1786" alt="Divider">
-          </div>
-        </div>
-      </section>
-        
-      <section class="projects-container">
-        <div class="headers">
-          <h2>Personal Projects</h2>
-        </div>
-        <div id="personal"></div>
-      </section>
-      
-      <section class="projects-container">
-        <div class="headers">
-          <h2>Freelance</h2>
-        </div>
-        <div id="freelance"></div>
-      </section>
-      
-      
-    </div>
-  </div>
-  
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function() {
-      $.ajax({url: "projects.json", success: function(result){
-        for (let i = 0; i < result.length; i++) {
-          el = result[i];
-
-          let card = "<div class='project-card'>" +
-                     "<h3>" +
-                      el.name +
-                      "</h3>" +
-                      "<div class='wrapper project-wrapper'>" +
-                        "<img class='responsive' src='images/Title Divider@2x.png' height='220' width='1786' alt='Divider'>" +
-                        "</div>" +
-                        "<ul class='tags'>";
-                          
-          for (let j = 0; j < el.tags.length; j++) {
-            card += "<li>" + el.tags[j] + "</li>";
-          }
-          
-          card += "</ul> </div>";
-          card = $(card);
-          card.attr("id", el.name);
-          card.attr("value", i);
-          
-          if (el.type === "personal") {          
-            $("#personal").append(card);
-          }
-          else {
-            $("#freelance").append(card);
-          }
-
-          card.on("click", function(){
-            let index = Number(card.attr("value"));
-            let popup = "<div class='overlay'><div class='project-popup'><div class='name'><h1>" +
-                        result[index].name +
-                        "<img class='responsive' src='images/Title Divider@2x.png' height='220' width='1786' alt='Divider'>" +
-                        "</div>";
-
-            if (result[index].start != null && result[index].end != null) {
-              popup += "<div class='duration'>" +
-                       result[index].start + " - " +
-                       result[index].end +
-                       "</div>";
+            <section>
+                <h2>
+                    <span>P</span>ersonal
+                </h2>
+                <div id="personal"></div>
+            </section>
+            
+            <section>
+                <h2>
+                    <span>F</span>reelance
+                </h2>
+                <div id="freelance"></div>
+            </section>
+        </div>  
+    </div>  
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            if(window.innerWidth <= 768) {
+                $('body').addClass('mobile');
+            }
+            else {
+                $('body').addClass('desktop');
             }
 
-            popup += "<div class='description'>" +
-                     result[index].description +
-                     "</div><div class='closer'><a target='_blank' href=" +
-                     result[index].link +
-                     ">Link</a>" +
-                     "<div class='close'>Close</div></div></div></div>";
+            $('header').load('navbar.html');
+            $('.sparkle-divider').load('sparkle_divider.html');
 
-            $(".main-body").append(popup);
+            $.ajax({url: "projects.json", success: function(result){
+                for(var i = 0; i < result.length; i++){
+                    var project = result[i];
 
-            $(".close").on({
-              mouseover: function() {
-                $(this).css("cursor", "pointer");
-              },
-              click: function() {
-                $(".project-popup").remove();
-                $(".overlay").remove();
-              }
-            })
-          });
-        }
-        
+                    var projectCard = '<button value="' +
+                                      project.id +
+                                      '">' +
+                                      '<div><h3>' +
+                                      project.name +
+                                      '</h3>' +
+                                      '<div class="sparkle-divider"></div>' +
+                                      '</div>' +
+                                      '<ul class="project-tags">';
 
-        $(".project-card").on({
-          mouseover: function() {
-            $(this).css("cursor", "pointer");
-            $(this).css("border", "2px solid #082145");
-          },
-          mouseout: function() {
-            $(this).css("border", "none");
-          }
+                    var projectTags = project.tags;
+
+                    for(var j = 0; j < projectTags.length; j++) {
+                        projectCard += '<li>' + projectTags[j] + '</li>';
+                    }
+
+                    projectCard += '</ul></button>';
+
+                    var dialog = '<dialog id="' +
+                                  project.id +
+                                  '">' +
+                                  '<h2>' +
+                                  project.name +
+                                  '</h2>' +
+                                  '<div class="sparkle-divider"><svg height="50" width="200" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892.53 109.28"> <defs> <style> .cls-1 { fill: #bbaba4; stroke-width: 0px; } </style> </defs> <g id="Layer_6" data-name="Layer 6"> <g> <path class="cls-1" d="M453.8,109.28s-3.27-34.82-13.36-43.81c-10.18-9.07-73.5-10.83-73.5-10.83,0,0,63.33-1.76,73.5-10.83,10.09-9.07,13.36-43.81,13.36-43.81,0,0,3.18,34.74,13.36,43.81,10.18,9.07,73.5,10.83,73.5,10.83,0,0-63.33,1.76-73.5,10.83-10.18,9-13.36,43.81-13.36,43.81Z"/> <path class="cls-1" d="M266.8,96.93s-2.53-26.95-10.34-33.91c-7.88-7.02-56.88-8.38-56.88-8.38,0,0,49.01-1.36,56.88-8.38,7.81-7.02,10.34-33.91,10.34-33.91,0,0,2.46,26.89,10.34,33.91,7.88,7.02,56.88,8.38,56.88,8.38,0,0-49.01,1.36-56.88,8.38-7.88,6.96-10.34,33.91-10.34,33.91Z"/> <path class="cls-1" d="M633.29,96.93s-2.53-26.95-10.34-33.91c-7.88-7.02-56.88-8.38-56.88-8.38,0,0,49.01-1.36,56.88-8.38,7.81-7.02,10.34-33.91,10.34-33.91,0,0,2.46,26.89,10.34,33.91,7.88,7.02,56.88,8.38,56.88,8.38,0,0-49.01,1.36-56.88,8.38-7.88,6.96-10.34,33.91-10.34,33.91Z"/> <path class="cls-1" d="M0,54.64c276.03-2.57,560.68-2.55,836.74-.53,0,0,55.78.53,55.78.53l-55.78.53c-276.07,2.02-560.71,2.04-836.74-.53h0Z"/> </g> </g> </svg></div>' + 
+                                  '<p>' +
+                                  project.description +
+                                  '<p>' +
+                                  '<div class="dialog-action-buttons">' +
+                                  '<a href="' +
+                                  project.link + 
+                                  '">Link</a>' +
+                                  '<a class="close" href="javascript:void(0)">Close</a>' +
+                                  '</div>' +  
+                                  '</dialog>';
+
+                    if(project.type === 'personal') {
+                        $('#personal').append(projectCard);
+                    }
+                    else if (project.type === 'freelance') {
+                        $('#freelance').append(projectCard);
+                    }
+
+                    $('body').append(dialog);             
+                }
+            }});
+
+            var currentPos;
+
+            $('body').on('click', '#personal button, #freelance button', function(){
+                var selector = '#' + $(this).val();
+                var dialog = document.querySelectorAll(selector);
+                if(dialog.length > 0){
+                    dialog[0].showModal();
+                    currentPos = window.scrollY;
+                    $('body').css('top', -currentPos);
+                    $('body').addClass('modal-open');
+                }
+            });
+            
+            $('body').on('click', '.close', function(){
+                var openDialog = document.querySelectorAll('dialog[open]');
+                if(openDialog.length > 0){
+                    openDialog[0].close();
+                    $('body').removeClass('modal-open');
+                    $('body').css('top', 0);
+                    window.scrollTo(0, currentPos);
+                }
+            });
         });
-      }});
-    });
     </script>
 </body>
-
 </html>
