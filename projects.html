@@ -19,12 +19,15 @@
         button:hover { cursor: pointer; }
         button:hover h3 { text-decoration: underline; }
         #personal, #freelance { display: flex; column-gap: 2rem; position: relative; }
-        .desktop #personal, .desktop #freelance { column-gap: 2rem; flex-wrap: wrap; justify-content: space-between; row-gap: 2rem; }
-        .mobile #personal, .mobile #freelance { overflow-x: scroll; max-width: 100%; padding-bottom: 2rem; padding-right: 15rem; }
-
+        .desktop #personal, .desktop #freelance { column-gap: 2rem; flex-wrap: wrap; justify-content: space-between; row-gap: 2rem; scrollbar-width: thin; }
+        .mobile #personal, .mobile #freelance { overflow-x: scroll; max-width: 100%; padding-bottom: 2rem; padding-right: 15rem; scrollbar-width: thin; }
+        @media (max-width: 1034px) {
+            button { min-width: 25rem; width: 25rem; height: 20rem; }
+        }
+        
         .project-tags { list-style: none; font-family: "Urbanist", serif; color: #082145; display: flex; flex-wrap: wrap; column-gap: .5rem; row-gap: .5rem; padding: 0 1rem; justify-content: center; }
         .project-tags li { padding: .5rem; background-color: #cadbe6; border-radius: 2px; }
-
+        
         dialog { position: absolute; border: none; }
         dialog h2 { text-align: center; margin: 0 auto; width: max-content; }
         .desktop dialog { position: absolute; top: 0; bottom: 0; height: 60rem; width: 80rem; padding: 4rem; border-radius: 6px; }
@@ -108,6 +111,9 @@
                                   project.name +
                                   '</h2>' +
                                   '<div class="sparkle-divider"><svg height="50" width="200" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892.53 109.28"> <defs> <style> .cls-1 { fill: #bbaba4; stroke-width: 0px; } </style> </defs> <g id="Layer_6" data-name="Layer 6"> <g> <path class="cls-1" d="M453.8,109.28s-3.27-34.82-13.36-43.81c-10.18-9.07-73.5-10.83-73.5-10.83,0,0,63.33-1.76,73.5-10.83,10.09-9.07,13.36-43.81,13.36-43.81,0,0,3.18,34.74,13.36,43.81,10.18,9.07,73.5,10.83,73.5,10.83,0,0-63.33,1.76-73.5,10.83-10.18,9-13.36,43.81-13.36,43.81Z"/> <path class="cls-1" d="M266.8,96.93s-2.53-26.95-10.34-33.91c-7.88-7.02-56.88-8.38-56.88-8.38,0,0,49.01-1.36,56.88-8.38,7.81-7.02,10.34-33.91,10.34-33.91,0,0,2.46,26.89,10.34,33.91,7.88,7.02,56.88,8.38,56.88,8.38,0,0-49.01,1.36-56.88,8.38-7.88,6.96-10.34,33.91-10.34,33.91Z"/> <path class="cls-1" d="M633.29,96.93s-2.53-26.95-10.34-33.91c-7.88-7.02-56.88-8.38-56.88-8.38,0,0,49.01-1.36,56.88-8.38,7.81-7.02,10.34-33.91,10.34-33.91,0,0,2.46,26.89,10.34,33.91,7.88,7.02,56.88,8.38,56.88,8.38,0,0-49.01,1.36-56.88,8.38-7.88,6.96-10.34,33.91-10.34,33.91Z"/> <path class="cls-1" d="M0,54.64c276.03-2.57,560.68-2.55,836.74-.53,0,0,55.78.53,55.78.53l-55.78.53c-276.07,2.02-560.71,2.04-836.74-.53h0Z"/> </g> </g> </svg></div>' + 
+                                  '<div>' +
+                                  (project.start !== null && project.end !== null ? project.start + ' - ' + project.end : '' )  +
+                                  '</div>' +
                                   '<p>' +
                                   project.description +
                                   '<p>' +
