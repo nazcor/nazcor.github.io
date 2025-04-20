@@ -28,6 +28,21 @@ a, a:focus, a:active { text-decoration: underline; color: #082145; }
 .mobile h1 { font-size: 1.8rem; }
 .mobile h1 span { font-size: 2.8rem; }
 .mobile h3 { font-size: 1.4rem; }
+dialog { position: absolute; border: none; }
+dialog h2 { text-align: center; margin: 0 auto; width: max-content; }
+.desktop dialog { position: absolute; top: 0; bottom: 0; height: 60rem; width: 80rem; padding: 4rem; border-radius: 6px; }
+@media (max-width: 1600px) {
+    .desktop dialog { height: 40rem; width: 60rem; }
+}
+@media (max-width: 818px) {
+    .desktop dialog { height: 30rem; width: 40rem; }
+}
+.mobile dialog { top: 0; height: 100%; width: 100%; }
+dialog .sparkle-divider { width: min-content; margin: 0 auto; }
+.dialog-action-buttons { display: flex; width: 100%; justify-content: space-around; position: absolute; bottom: 5rem; left: 0; }
+.desktop dialog::backdrop { background: rgba(0, 0, 0, 0.4); }
+.mobile dialog::backdrop { background: #fff; }
+.modal-open { position: fixed; overflow: hidden; }
 
 
 
@@ -38,6 +53,20 @@ header { background-color: #f9f9f9; }
 .action-buttons a { padding: 0 3rem; } 
 .action-buttons a:hover, .action-buttons a:visited { text-decoration: none; }
 .action-buttons a, .action-buttons a:focus, .action-buttons a:active { font-weight: 600; color: #bbaba4; text-decoration: underline; }
+#hamburger-container { min-width: 6rem; height: 6rem; width: 6rem; border: none; background: none; }
+.hamburger { width: 3rem; height: 3rem; vertical-align: -0.125em; }
+#hamburger-modal {
+    position: fixed;
+    margin: 0;
+    width: 50%;
+    right: 0;
+    margin-left: auto;
+    padding-top: 5rem;
+}
+#hamburger-modal a { text-align: center; display: block; }
+#hamburger-modal .close { width: fit-content; border-radius: 50%; padding: 0.5rem; position: absolute; top: 1rem; right: 1rem; }
+#hamburger-modal .close svg { vertical-align: -0.125em; }
+#hamburger-modal::backdrop { background: rgba(0, 0, 0, 0.4); }
 
 
 

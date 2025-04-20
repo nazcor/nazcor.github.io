@@ -193,7 +193,13 @@
     </script>
     <script>
         $(document).ready(function(){
-            $('header').load('navbar.html');
+            if ($('.desktop').length > 0) {
+                $('header').load('navbar-d.html');
+            }
+            else {
+                $('header').load('navbar-m.xml');
+            }
+
             $('.sparkle-divider').load('sparkle_divider.html');
 
             $.ajax({url: "exp_edu.json", success: function(result){
@@ -248,6 +254,27 @@
                     }
                 }});
             }});
+
+            $('body').on('click', '#hamburger-container', function(){
+                var selector = '#' + $(this).val();
+                var dialog = document.querySelectorAll(selector);
+                if(dialog.length > 0){
+                    dialog[0].showModal();
+                    currentPos = window.scrollY;
+                    $('body').css('top', -currentPos);
+                    $('body').addClass('modal-open');
+                }
+            });
+            
+            $('body').on('click', '.close', function(){
+                var openDialog = document.querySelectorAll('dialog[open]');
+                if(openDialog.length > 0){
+                    openDialog[0].close();
+                    $('body').removeClass('modal-open');
+                    $('body').css('top', 0);
+                    window.scrollTo(0, currentPos);
+                }
+            });
         });
     </script>
 </body>

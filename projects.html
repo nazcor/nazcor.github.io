@@ -29,22 +29,6 @@
         
         .project-tags { list-style: none; font-family: "Urbanist", serif; color: #082145; display: flex; flex-wrap: wrap; column-gap: .5rem; row-gap: .5rem; padding: 0 1rem; justify-content: center; }
         .project-tags li { padding: .5rem; background-color: #cadbe6; border-radius: 2px; }
-        
-        dialog { position: absolute; border: none; }
-        dialog h2 { text-align: center; margin: 0 auto; width: max-content; }
-        .desktop dialog { position: absolute; top: 0; bottom: 0; height: 60rem; width: 80rem; padding: 4rem; border-radius: 6px; }
-        @media (max-width: 1600px) {
-            .desktop dialog { height: 40rem; width: 60rem; }
-        }
-        @media (max-width: 818px) {
-            .desktop dialog { height: 30rem; width: 40rem; }
-        }
-        .mobile dialog { top: 0; height: 100%; width: 100%; }
-        dialog .sparkle-divider { width: min-content; margin: 0 auto; }
-        .dialog-action-buttons { display: flex; width: 100%; justify-content: space-around; position: absolute; bottom: 5rem; left: 0; }
-        .desktop dialog::backdrop { background: rgba(0, 0, 0, 0.4); }
-        .mobile dialog::backdrop { background: #fff; }
-        .modal-open { position: fixed; overflow: hidden; }
     </style>
 
     <header></header>
@@ -81,7 +65,14 @@
     </script>
     <script>
         $(document).ready(function(){
-            $('header').load('navbar.html');
+            if ($('.desktop').length > 0) {
+                $('header').load('navbar-d.html');
+            }
+            else {
+                $('header').load('navbar-m.xml');
+            }
+
+
             $('.sparkle-divider').load('sparkle_divider.html');
             var personal = 0;
             var freelance = 0;
@@ -151,7 +142,7 @@
 
             var currentPos;
 
-            $('body').on('click', '#personal button, #freelance button', function(){
+            $('body').on('click', '#personal button, #freelance button, #hamburger-container', function(){
                 var selector = '#' + $(this).val();
                 var dialog = document.querySelectorAll(selector);
                 if(dialog.length > 0){
